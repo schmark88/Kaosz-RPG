@@ -4,7 +4,8 @@ export class PlayerCharacter {
     id: number;
     name: string;
     age: number;
-    race: string;
+    raceName: string;
+    raceId: string;
     speed: number;
 
     // Main attributes
@@ -28,6 +29,9 @@ export class PlayerCharacter {
     attributePoints: number;
     skillPoints: number;
 
+    goodFateBoundary: number;
+    badFateBoundary: number;
+
     constructor() {
         this.name = '';
         this.physique = new CharacterAttribute();
@@ -45,11 +49,15 @@ export class PlayerCharacter {
         this.essence = new CharacterAttribute();
         this.magicpower = new CharacterAttribute();
         this.essenceshield = new CharacterAttribute();
+
+        this.goodFateBoundary = 33;
+        this.badFateBoundary = 66;
     }
 
     setupRace(race: any) {
         this.speed = race.speed.base;
-        this.race = race.name;
+        this.raceName = race.name;
+        this.raceId = race.id;
 
          const attributes = race.foertekek;
          this.physique.base = attributes.fizikum.min;
@@ -68,7 +76,8 @@ export class PlayerCharacter {
          this.magicpower.base = attributes.esszencia.min;
          this.essenceshield.base = attributes.esszencia.min;
 
-         this.specials = {};
+        this.speed = race.speed.base;
+        this.specials = {};
     }
     getBaseAttributeSum(): number {
         return this.physique.base + this.consciousness.base + this.aptitude.base + this.essence.base;

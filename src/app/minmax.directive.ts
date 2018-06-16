@@ -42,29 +42,3 @@ export class PercentRangeValidatorDirective implements Validator {
                               : null;
   }
 }
-/** A hero's name can't match the given regular expression 
-export function minmaxValidator(value: any): ValidatorFn {
-  return (control: AbstractControl): {[key: string]: any} | null => {
-    if (control.value > value.max) {
-        return {'valueTooHigh': {value: control.value}};
-    }
-    if (control.value < value.min) {
-        return {'valueTooHigh': {value: control.value}};
-    }
-    return null;
-  };
-}
-
-@Directive({
-  selector: '[appMinmax]',
-  providers: [{provide: NG_VALIDATORS, useExisting: MinmaxValidatorDirective, multi: true}]
-})
-export class MinmaxValidatorDirective implements Validator {
-@Input() value: any;
-
-  validate(control: AbstractControl): {[key: string]: any} | null {
-    return  minmaxValidator(this.value)(control)
-                             ;
-  }
-}
-*/

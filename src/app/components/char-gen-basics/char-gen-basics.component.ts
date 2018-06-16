@@ -41,10 +41,10 @@ export class CharGenBasicsComponent implements OnInit {
  }
  checkSpecial(special: JSON){
 
-    if (special.isSelected) {
-      this.player.specials[special.id] = special;
+    if (special['isSelected']) {
+      this.player.specials[special['id']] = special;
     } else {
-      delete this.player.specials[special['id']
+      delete this.player.specials[special['id']];
     }
     console.log(this.player.specials);
  }

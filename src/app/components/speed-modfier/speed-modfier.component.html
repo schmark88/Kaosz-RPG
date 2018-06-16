@@ -1,0 +1,15 @@
+<div *ngIf=races[player.raceId]>
+
+  Faji Gyorsaság:
+    <mat-slider
+      thumbLabel
+        class="example-margin"
+        [max]="races[player.raceId].speed.min"
+        [min]="races[player.raceId].speed.max"
+        [step]="1"
+        [(ngModel)]="player.speed"
+        >
+    </mat-slider>
+    Jártasságpont: {{(races[player.raceId].speed.base - player.speed) * -300}}
+</div>
+<hr>
