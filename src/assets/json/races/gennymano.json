@@ -21,7 +21,9 @@
         "ij":-40
     },
     "jartMaxLevelMod": {
-        "ejszaka": 4
+		"csoportok": {
+			"ejszaka": 4
+			}
     },
     "bonusJart": {
         "tolvajlas": {

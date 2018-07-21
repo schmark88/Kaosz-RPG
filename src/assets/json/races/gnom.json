@@ -20,19 +20,21 @@
         "fegyver":10
     },
     "jartMaxLevelMod": {
-        "szamtan":6,
-        "mertan":6
+		"jart": {
+			"szamtan":6,
+			"mertan":6
+		}
     },
     "bonusJart": {
-                "barkacsolas":{
+        "barkacsolas":{
             "id":"barkacsolas",
             "level":6
         },
-                        "mechanika":{
+        "mechanika":{
             "id":"mechanika",
             "level":6
         },
-                        "rejtozes":{
+         "rejtozes":{
             "id":"rejtozes",
             "level":4
         }

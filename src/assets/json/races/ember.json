@@ -10,7 +10,18 @@
             "info": "Amennyiben a Játékos emberi testben rejtõzõ gázlénnyel kíván ját-\nszani, megteheti  mindezt.  A karaktere  minden  te-\nkintetben embernek fog tûnni, amíg csak akarja, s semmiféle mágia –\nmég az istenek mágiája sem! – képes leleplezni õt. Az emberi test min-\nden  képességében  és  tulajdonságában  megegyezik  az  igazi  emberrel\n(pl. természetes regeneráció, esszenciapontok feltöltõdése, jártasságok\nhasználata, vagy pl. a mérgekre emberként reagál, emberként táplálko-\nzik, emberként gyógyítható stb.).\nFontos kitétel, hogy a gázlény csak egy bizonyos ember álcáját ölt-\nheti magára, és semmilyen más anyagi testbe nem bújhat – tehát ez a\ntulajdonság nem alakváltás. Az álca fenntartása folyamatos esszencia-\nfelhasználást igényel, melyet a mhyor a saját Varázserõ fõértékébõl fe-\ndez.  Az  esszenciaigény  naponta  24  esszencia-pont,  azaz  óránként  1\npont. Amennyiben a karakter nem rendelkezik aktív esszencia-ponttal,\núgy  a  passzív  esszenciáját  használja  erre  a  célra  (esszenciapajzs),  ha\nez sem áll rendelkezésére, akkor a fizikumpontjait fordítja álcája fenn-\ntartásához, ám ebbõl óránként 2-t veszít, azaz naponta 48 pontot.\nGázlény formájába tetszés szerint alakulhat, ilyenkor az emberi test\nalakul  át  gázzá,  mintegy  10  szívdobbanás  alatt  (a  visszaalakulás\nugyanennyi  idõt  vesz  igénybe),  tehát  nem  hagyja  hátra  üres  porhü-\nvelyként  a  testet.  Ruhái,  felszerelése  természetesen  hátramaradnak."      }
         },
     "jartMod": {},
-    "jartMaxLevelMod": {},
+    "jartMaxLevelMod": {
+			"csoportok": {
+				"ejszaka": 4,
+				"ver": 4,
+				"tudomany": 4,
+				"feny": 4,
+				"szakmak": 4,
+				"hetkoznapok": 4,
+				"ver": 4,
+				"gyogyitas": 4
+			}
+	},
     "bonusJart": {},
     "foertekek": {
         "fizikum": {

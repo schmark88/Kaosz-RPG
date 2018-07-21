@@ -22,6 +22,7 @@ export function rangeP(base: number): ValidatorFn {
   providers: [{provide: NG_VALIDATORS, useExisting: ForbiddenValidatorDirective, multi: true}]
 })
 export class ForbiddenValidatorDirective implements Validator {
+  // tslint:disable-next-line:no-input-rename
   @Input('appRange') range: [number];
 
   validate(control: AbstractControl): {[key: string]: any} | null {
@@ -35,6 +36,7 @@ export class ForbiddenValidatorDirective implements Validator {
   providers: [{provide: NG_VALIDATORS, useExisting: PercentRangeValidatorDirective, multi: true}]
 })
 export class PercentRangeValidatorDirective implements Validator {
+  // tslint:disable-next-line:no-input-rename
   @Input('appPercentRange') base: number;
 
   validate(control: AbstractControl): {[key: string]: any} | null {

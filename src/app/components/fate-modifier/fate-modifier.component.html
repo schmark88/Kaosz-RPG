@@ -1,6 +1,6 @@
 <div *ngIf=player.raceId>
 
-    Sors zonak:
+    Sors zonák:
       <mat-slider
         thumbLabel
           class="example-margin"
@@ -13,13 +13,14 @@
       <mat-slider
       thumbLabel
         class="example-margin"
-        [min]="goodFateBoundary"
+        [min]="player.goodFateBoundary"
         [max]="100"
         [step]="1"
         [(ngModel)]="player.badFateBoundary"
         >
     </mat-slider>
-      Jártasságpont: {{(originalGoodFate - player.goodFateBoundary)* -150 + (originalBadFate - player.badFateBoundary)* 150}}
+      Jártasságpont: {{getFateCost()}}
+    <table>
       <tr>
           <th>Jo</th>
           <th>Semleges</th>
@@ -30,5 +31,6 @@
           <td>{{player.goodFateBoundary+1}} - {{player.badFateBoundary-1}}</td>
           <td>{{player.badFateBoundary}} - 100</td>
         </tr>
+    </table>
   </div>
   <hr>

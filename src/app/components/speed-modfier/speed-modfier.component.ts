@@ -19,5 +19,10 @@ export class SpeedModfierComponent implements OnInit {
 
   ngOnInit() {
   }
+  getSpeedCost(): number {
+    const cost = (this.races[this.player.raceId].speed.base - this.player.speed) * -300;
+    this.player.skillCosts['speed'] = cost;
+    return cost;
+  }
 
 }

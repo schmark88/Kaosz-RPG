@@ -3,18 +3,22 @@
 </div>
 <hr>
 <div *ngIf="selectedRace">{{selectedRace.summary}}</div>
+{{currentSkillPoints}}
 <hr>
 <!-- Age -->
 <div *ngIf="selectedRace">
+  <label for="name">Név:</label>
+  <input id="name" name="name" class="form-control" 
+    type="text"  [(ngModel)] = 'player.name' #name="ngModel" required>
   <label for="age">Kor:</label>
-    <input id="age" name="age" class="form-control" 
+  <input id="age" name="age" class="form-control" 
     [appRange]=[0,selectedRace.age.seniorMax]
     type="number"  [(ngModel)] = 'player.age' #age="ngModel" required>
   <table>
     <tr>
       <th>Fiatal Kor</th>
-      <th>Felnott Kor</th>
-      <th>Idos Kor</th>
+      <th>Felnött Kor</th>
+      <th>Idös Kor</th>
     </tr>
     <tr>
       <td>0-{{selectedRace.age.juvenis}}</td>
@@ -36,56 +40,68 @@
       <td>Fizikum</td>
       <td><input  id="physique" name="physique" class="form-control" 
         [appRange]=[selectedRace.foertekek.fizikum.min,selectedRace.foertekek.fizikum.max]
+        [min]='selectedRace.foertekek.fizikum.min' [max]='selectedRace.foertekek.fizikum.max'
         type="number"  [(ngModel)] = 'player.physique.base' #physique="ngModel" ></td>
       <td>Erő</td>
       <td><input id="strenght" name="strenght" class="form-control" 
         [appPercentRange]='player.physique.base'
+        [min]='player.physique.base*0.8' [max]='player.physique.base*1.2'
         type="number" [(ngModel)] = 'player.strenght.base' #strenght="ngModel"></td>
       <td>Szivósság</td>
       <td><input id="stamina" name="stamina" class="form-control" 
         [appPercentRange]='player.physique.base'
+        [min]='player.physique.base*0.8' [max]='player.physique.base*1.2'
         type="number" [(ngModel)] = 'player.stamina.base' #stamina="ngModel"></td>
     </tr>
     <tr>
       <td>Rátermettség</td>
       <td><input  id="aptitude" name="aptitude" class="form-control" 
         [appRange]=[selectedRace.foertekek.ratermettseg.min,selectedRace.foertekek.ratermettseg.max]
+        [min]='selectedRace.foertekek.ratermettseg.min' [max]='selectedRace.foertekek.ratermettseg.max'
          type="number"  [(ngModel)] = 'player.aptitude.base' #aptitude="ngModel" ></td>
       <td>Ügyesség</td>
       <td><input id="dexterity" name="dexterity" class="form-control" 
         [appPercentRange]='player.aptitude.base'
+        [min]='player.aptitude.base*0.8' [max]='player.aptitude.base*1.2'
         type="number" [(ngModel)] = 'player.dexterity.base' #dexterity="ngModel"></td>
       <td>Reflex</td>
       <td><input id="reflex" name="reflex" class="form-control" 
         [appPercentRange]='player.aptitude.base'
+        [min]='player.aptitude.base*0.8' [max]='player.aptitude.base*1.2'
         type="number" [(ngModel)] = 'player.reflex.base' #reflex="ngModel"></td>
     </tr>
     <tr>
       <td>Tudat</td>
       <td><input  id="consciousness" name="consciousness" class="form-control" 
         [appRange]=[selectedRace.foertekek.tudat.min,selectedRace.foertekek.tudat.max]
+        [min]='selectedRace.foertekek.tudat.min' [max]='selectedRace.foertekek.tudat.max'
          type="number"  [(ngModel)] = 'player.consciousness.base' #consciousness="ngModel" ></td>
       <td>Intelligencia</td>
          <td><input id="intellect" name="intellect" class="form-control" 
            [appPercentRange]='player.consciousness.base'
+           [min]='player.consciousness.base*0.8' [max]='player.consciousness.base*1.2'
            type="number" [(ngModel)] = 'player.intellect.base' #intellect="ngModel"></td>
       <td>Lelkierő</td>
          <td><input id="willpower" name="willpower" class="form-control" 
            [appPercentRange]='player.consciousness.base'
+           [min]='player.consciousness.base*0.8' [max]='player.consciousness.base*1.2'
            type="number" [(ngModel)] = 'player.willpower.base' #willpower="ngModel"></td>
     </tr>
     <tr>
         <td>Esszencia</td>
         <td><input  id="essence" name="essence" class="form-control" 
           [appRange]=[selectedRace.foertekek.esszencia.min,selectedRace.foertekek.esszencia.max]
-           type="number"  [(ngModel)] = 'player.essence.base' #essence="ngModel" ></td>
+          [min]='selectedRace.foertekek.esszencia.min' [max]='selectedRace.foertekek.esszencia.max'
+          type="number"  [(ngModel)] = 'player.essence.base' #essence="ngModel" ></td>
         <td>Varázserő</td>
            <td><input id="magicpower" name="magicpower" class="form-control" 
              [appPercentRange]='player.essence.base'
+             [min]='player.essence.base*0.8' [max]='player.essence.base*1.2'
              type="number" [(ngModel)] = 'player.magicpower.base' #magicpower="ngModel"></td>
         <td>Esszencia Pajzs</td>
            <td><input id="essenceshield" name="essenceshield" class="form-control" 
              [appPercentRange]='player.essence.base'
+             [min]='player.essence.base*0.8' [max]='player.essence.base*1.2'
              type="number" [(ngModel)] = 'player.essenceshield.base' #essenceshield="ngModel"></td>
       </tr>
   </table> 
@@ -99,7 +115,7 @@
         <th>Ár</th>
         <th>Leirás</th>
       </tr>
-    <tr *ngFor="let special of generateArray(selectedRace.specials)" >
+    <tr *ngFor="let special of globals.generateArray(selectedRace.specials)" >
       <td><input type="checkbox" [(ngModel)]="special.isSelected" (change)="checkSpecial(special)" />{{special.name}}</td>
       <td>{{special.cost}}</td>
       <td>{{special.info}}</td>

@@ -1,4 +1,4 @@
-<div *ngIf=races[player.raceId]>
+<div id="nev" *ngIf=races[player.raceId]>
 
   Faji Gyorsaság:
     <mat-slider
@@ -10,6 +10,6 @@
         [(ngModel)]="player.speed"
         >
     </mat-slider>
-    Jártasságpont: {{(races[player.raceId].speed.base - player.speed) * -300}}
+    Jártasságpont: {{getSpeedCost()}}
 </div>
 <hr>

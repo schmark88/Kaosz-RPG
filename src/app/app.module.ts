@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSliderModule} from '@angular/material/slider';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PersistenceModule } from 'angular-persistence';
 
 import { AppComponent } from './app.component';
 import { HelperComponent } from './components/helper/helper.component';
@@ -13,6 +14,14 @@ import { PercentRangeValidatorDirective } from './minmax.directive';
 import { Globals } from './globals';
 import { SpeedModfierComponent } from './components/speed-modfier/speed-modfier.component';
 import { FateModifierComponent } from './components/fate-modifier/fate-modifier.component';
+import { DisAdvantagesComponent } from './components/dis-advantages/dis-advantages.component';
+import { SkillsManagerComponent } from './components/skills-manager/skills-manager.component';
+import { MainNavBarComponent } from './shared/main-nav-bar/main-nav-bar.component';
+import { CharacterGeneratorComponent } from './shared/character-generator/character-generator.component';
+import { CharacterManagerComponent } from './shared/character-manager/character-manager.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CharacterViewerComponent } from './shared/character-viewer/character-viewer.component';
+
 
 
 @NgModule({
@@ -23,14 +32,22 @@ import { FateModifierComponent } from './components/fate-modifier/fate-modifier.
     ForbiddenValidatorDirective,
     PercentRangeValidatorDirective,
     SpeedModfierComponent,
-    FateModifierComponent
+    FateModifierComponent,
+    DisAdvantagesComponent,
+    SkillsManagerComponent,
+    MainNavBarComponent,
+    CharacterGeneratorComponent,
+    CharacterManagerComponent,
+    CharacterViewerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    PersistenceModule,
     MatSliderModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [Globals],
   bootstrap: [AppComponent]

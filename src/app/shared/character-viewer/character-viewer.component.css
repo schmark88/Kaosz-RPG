@@ -1,0 +1,49 @@
+img {
+    width: 20px;
+    height: 20px;
+
+}
+
+/* The Magic Float Center Code */
+.centered_container {
+    margin: 15px auto;
+    width: 90%;
+    overflow: auto;
+  }
+.float {
+    position: relative;
+    float: left;
+  }
+.status_bar {
+    width: 15%;
+    margin: 0 auto;
+}
+.main_attributes{
+    width: 40%;
+    margin: 0 auto;
+}
+.fate_table{
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+}
+.disadvantages_table{
+    width: 20%;
+    margin: 0 2.5%;
+    position: relative;
+}
+.race_specialty{
+    width: 20%;
+    margin: 0 2.5%;
+    position: relative;
+}
+.weapon_skills_table{
+    width: 20%;
+    margin: 0 2.5%;
+    position: relative;
+}
+.skills_table{
+    width: 20%;
+    margin: 0 2.5%;
+    position: relative;
+}

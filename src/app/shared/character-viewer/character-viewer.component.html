@@ -1,0 +1,130 @@
+<div *ngIf= '!player'> Csinálj karaktert</div>
+Characters: <button *ngFor='let char of globals.storedCharacters' (click)="setActiveCharacter(char)">{{char.name}}</button>
+<div *ngIf= "player" >
+  <div class="centered_container">
+    <div class="float status_bar">
+      <div>Név: {{player.name}}</div>
+      <div>Faj: {{player.raceName}} </div>
+      <div>Kor: {{player.age}}</div>
+      <div><img src="assets/icons/icon_hp.png">HP:{{player.hitpoints}}</div>
+      <div><img src="assets/icons/icon_mana.png">Esszencia: {{player.maxMana()}} / {{player.effectiveMana()}}</div>
+      <div><img src="assets/icons/icon_speed.png">Gyorsaság: {{player.speed}}</div>
+      <div><img src="assets/icons/icon_armor.png">Páncél: </div>
+      <div><img src="assets/icons/icon_magic_resist.png">Essz. Pajzs: {{player.maxMagicResist()}} </div>
+    </div>
+    <div>
+      <table class="float main_attributes" >
+        <caption> Főértékek</caption>
+        <tr>
+          <td>Fizikum</td>
+          <td>{{player.physique.base}}</td>
+          <td>Erő</td>
+          <td>{{player.strenght.base}}</td>
+          <td>Szivósság</td>
+          <td>{{player.stamina.base}}</td>
+        </tr>
+        <tr>
+          <td>Rátermettség</td>
+          <td>{{player.aptitude.base}}</td>
+          <td>Ügyesség</td>
+          <td>{{player.dexterity.base}}</td>
+          <td>Reflex</td>
+          <td>{{player.reflex.base}}</td>
+        </tr>
+        <tr>
+          <td>Tudat</td>
+          <td>{{player.consciousness.base}}</td>
+          <td>Intelligencia</td>
+          <td>{{player.intellect.base}}</td>
+          <td>Lelkierő</td>
+          <td>{{player.willpower.base}}</td>
+        </tr>
+        <tr>
+            <td>Esszencia</td>
+            <td>{{player.essence.base}}</td>
+            <td>Varázserő</td>
+            <td>{{player.magicpower.base}}</td>
+            <td>Esszencia Pajzs</td>
+            <td>{{player.essenceshield.base}}</td>
+          </tr>
+      </table>
+    </div>
+    <div>
+      <table class="fate_table">
+        <caption>Sors zonák</caption>
+        <tr>
+          <th>Jo</th>
+          <th>Semleges</th>
+          <th>Rossz</th>
+        </tr>
+        <tr>
+          <td>1 - {{player.goodFateBoundary}}</td>
+          <td>{{player.goodFateBoundary+1}} - {{player.badFateBoundary-1}}</td>
+          <td>{{player.badFateBoundary}} - 100</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="centered_container"> 
+    <table *ngIf="player.skills" class=" float skills_table">
+      <caption> Jártasságok </caption>
+      <tr>
+        <th> Név </th>
+        <th> Szint </th>
+      </tr>
+      <ng-container *ngFor="let da of globals.generateArray(player.skills)">
+      <ng-container *ngIf="da.id != 'fegyverforgatas'">
+        <tr >
+          <td>{{da.name}}</td>
+          <td *ngIf='!da.csoportok'>{{da.level}}</td>
+        </tr>
+        <ng-container *ngIf='da.csoportok' > 
+          <ng-container *ngFor="let sub of globals.generateArray(da.csoportok)" > 
+            <tr *ngIf='sub.level > 0' >
+              <td> _{{sub.name}}</td>
+              <td>{{sub.level}}</td>
+            </tr>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+      </ng-container>
+    </table>
+    <table  *ngIf="player.skills.fegyverforgatas" class="float weapon_skills_table">
+      <caption> Fegyverforgatás </caption>
+      <tr>
+        <th> Név </th>
+        <th> Támadás </th>
+        <th> Hárítás </th>
+      </tr>
+      <ng-container *ngFor="let da of globals.generateArray(player.skills.fegyverforgatas.csoportok)">
+      <tr *ngIf=" da.atk > 0 || da.def > 0" >
+        <td>{{da.name}}</td>
+        <td>{{da.atk}}</td>
+        <td>{{da.def}}</td>
+      </tr>
+      </ng-container>
+    </table>
+    <table  *ngIf="(player.disAdvantages | json) != ({} | json)" class="float disadvantages_table">
+      <caption> Elönyök/Hátrányok </caption>
+      <tr>
+        <th> Név </th>
+        <th> Szint </th>
+      </tr>
+      <tr *ngFor="let da of globals.generateArray(player.disAdvantages)" >
+        <td>{{da.name}}</td>
+        <td>{{da.level}}</td>
+      </tr>
+    </table>
+    <table  *ngIf="(player.specials | json) != ({} | json)" class="float race_specialty">
+      <caption> Faji kép.</caption>
+      <tr>
+        <th> Név </th>
+        <th> Szint </th>
+      </tr>
+      <tr *ngFor="let da of globals.generateArray(player.specials)" >
+        <td>{{da.name}}</td>
+        <td>{{da.level}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

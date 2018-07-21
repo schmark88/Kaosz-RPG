@@ -1,0 +1,62 @@
+<hr>
+<div *ngIf=player.raceId>
+  <form class="radio-group">
+    <input id="skillGroup1"type="radio" name="something" [(ngModel)]="showTab" value="ejszaka" > 
+    <label for="skillGroup1">Éjszaka</label>
+    <input id="skillGroup2" type="radio" name="something" [(ngModel)]="showTab" value="feny" > 
+    <label for="skillGroup2">Fény</label>
+    <input id="skillGroup3" type="radio" name="something" [(ngModel)]="showTab" value="gyogyitas" >
+    <label for="skillGroup3">Gyógyitás</label>
+    <input id="skillGroup4" type="radio" name="something" [(ngModel)]="showTab" value="hetkoznapok" > 
+    <label for="skillGroup4">Hétköznapok</label>
+    <input id="skillGroup5" type="radio" name="something" [(ngModel)]="showTab" value="szakmak" > 
+    <label for="skillGroup5">Szakmák</label>
+    <input id="skillGroup6" type="radio" name="something" [(ngModel)]="showTab" value="tudomany" > 
+    <label for="skillGroup6">Tudományok</label>
+    <input id="skillGroup7" type="radio" name="something" [(ngModel)]="showTab" value="ver" > 
+    <label for="skillGroup7">Vér</label>
+    <input id="skillGroup8" type="radio" name="something" [(ngModel)]="showTab" value="none" > 
+    <label for="skillGroup8">Elrejt</label>
+  </form>
+<table >
+      <tr >
+        <th>Név</th>
+        <th>Szint</th>
+        <th>JP</th>
+        <th>Leirás</th>
+      </tr>
+  <ng-container *ngFor="let skillGroup of globals.generateArray(globals.skills)" >
+    <ng-container *ngFor="let skill of globals.generateArray(skillGroup)" >
+    <tr *ngIf='showTab==skill.jartCsop' >
+      <td><!-- <input type="checkbox" [(ngModel)]="skill.isSelected" (change)="check(skill)" /> -->{{skill.name}}</td>
+      <td> <input *ngIf='!skill.csoportok' type="number" [min]='skill.minLevel' [max]='skill.maxLevel'
+        [appRange]='[skill.minLevel,skill.maxLevel]'  [(ngModel)]=skill.level> </td>
+      <td>{{getCostAndUpdate(skill)}}</td>
+      <td>
+        <div>Szükséges: {{skill.reqFoertekId}} {{skill.req[skill.level]}}</div>
+        <div>Követelmények: {{skill.reqJart}} </div>
+        <div>{{skill.info}}</div>
+        <div *ngIf="skill.csoportok && skill.id != 'fegyverforgatas'"><table>
+          <tr *ngFor="let csoport of  globals.generateArray(skill.csoportok)">
+            <td>{{csoport.name}} </td>
+            <td><input type="number" [min]='csoport.minLevel' [max]='skill.maxLevel'
+              [appRange]='[csoport.minLevel,skill.maxLevel]'  [(ngModel)]=csoport.level></td>
+          </tr>
+        </table></div>
+        <div *ngIf="skill.id == 'fegyverforgatas'"><table>
+            <tr *ngFor="let csoport of  globals.generateArray(skill.csoportok)">
+              <td>{{csoport.name}} </td>
+              <td><input type="number" [min]='csoport.minAtk' [max]='skill.maxLevel'
+                [appRange]='[csoport.minAtk, skill.maxLevel]'  [(ngModel)]=csoport.atk></td>
+              <td><input type="number" [min]='csoport.minDef' [max]='skill.maxLevel'
+                [appRange]='[csoport.minDef, skill.maxLevel]'  [(ngModel)]=csoport.def></td>
+            </tr>
+          </table></div>
+      </td>
+    </tr>
+    </ng-container>
+  </ng-container>
+</table>
+</div>
+
+

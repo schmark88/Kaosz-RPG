@@ -1,0 +1,36 @@
+<div *ngIf=player.raceId>
+  <form class="radio-group">
+    <input id="advantage" type="radio" [(ngModel)]="showTab" [value]="0" name="something"> <label for="advantage">Előnyök</label>
+    <input id="disadvantage" type="radio" [(ngModel)]="showTab" [value]="1" name="something"><label for="disadvantage">Hátrányok</label>
+    <input id="hideDA" type="radio" [(ngModel)]="showTab" [value]="-1" name="something"><label for="hideDA">Elrejt</label> 
+  </form>
+<table class="container" >
+      <tr >
+        <th>Név</th>
+        <th>Szint</th>
+        <th>JP</th>
+        <th>Leirás</th>
+      </tr>
+    <ng-container *ngIf='showTab===0'>
+    <tr  *ngFor="let special of globals.generateArray(advantages)"  >
+      <td><input type="checkbox" [(ngModel)]="special.isSelected" (change)="check(special)" [id]='special.id'/> 
+        <label [for]='special.id'>{{special.name}}</label></td>
+      <td> <input *ngIf='special.costMax' type="number" min=1 [max]="getMaxStep(special)"
+        [appRange]='[1,getMaxStep(special)]'  [(ngModel)]=special.level> </td>
+      <td>{{getCost(special)}}</td>
+      <td>{{special.info}}</td>
+    </tr>
+  </ng-container>
+  <ng-container *ngIf='showTab===1'>
+  <tr *ngFor="let special of globals.generateArray(disAdvantages)" >
+    <td><input type="checkbox" [(ngModel)]="special.isSelected" (change)="check(special)" [id]='special.id'/>
+      <label [for]='special.id'>{{special.name}}</label></td>
+    <td> <input *ngIf='special.costMax' type="number" min=1 [max]="getMaxStep(special)"
+      [appRange]='[1,getMaxStep(special)]'  [(ngModel)]=special.level> </td>
+    <td>{{getCost(special)}}</td>
+    <td>{{special.info}}</td>
+  </tr>
+</ng-container>
+</table>
+</div>
+

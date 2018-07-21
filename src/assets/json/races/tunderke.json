@@ -125,9 +125,11 @@
     },
     "jartMod": {},
     "jartMaxLevelMod": {
-        "termeszetismeret":6,
-        "gyogynovenyismeret":6,
-        "tajekozodas":6
+		"jart": {
+			"termeszetismeret":6,
+			"gyogynovenyismeret":6,
+			"tajekozodas":6
+		}
     },
     "bonusJart": {},
     "foertekek": {
