@@ -1,0 +1,39 @@
+<div class="status-bar">
+    <ng-container *ngIf='isEditable'>
+        <span class="bar-item">{{player.name}} </span>
+        <span class="bar-item">{{player.raceName}} </span>
+        <span class="bar-item">Tapasztalat: 
+            <input type="number" [(ngModel)]="player.skillPoints" min=0> 
+        </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_hp.png">HP:{{player.maxHP()}} /
+            <input type="number" [(ngModel)]="player.hitpoints" min=0 [max]='player.maxHP()'>
+        </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_mana.png">Esszencia: {{player.maxMana()}} /
+            <input type="number" [(ngModel)]="player.mana" min=0 [max]='player.maxMana()'>
+        </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_magic_resist.png">Essz. Pajzs: {{player.maxMagicResist()}}/
+            <input type="number" [(ngModel)]="player.magicResist" min=0 [max]='player.maxMagicResist()'>
+        </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_mana.png">Essz/Varázslat: {{player.effectiveMana()}}</span>
+        <span class="bar-item">{{globals.getMoneyInStringFormat(player.money)}} </span>
+    </ng-container>
+    <ng-container *ngIf='!isEditable'>
+        <span class="bar-item">{{player.name}} </span>
+        <span class="bar-item">{{player.raceName}} </span>
+        <span class="bar-item">Tapasztalat: {{player.skillPoints + player.calculateSkillCosts()}} </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_hp.png">HP:{{player.maxHP()}} </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_mana.png">Esszencia: {{player.maxMana()}} </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_magic_resist.png">Essz. Pajzs: {{player.maxMagicResist()}} </span>
+        <span class="bar-item">
+            <img src="assets/icons/icon_mana.png">Esz/Varázslat: {{player.effectiveMana()}} </span>
+        <span class="bar-item">{{globals.getMoneyInStringFormat(player.money)}} </span>
+        <button class="bar-item" (click)='saveCharacter()'>Save Character</button>
+    </ng-container>
+</div>

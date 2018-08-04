@@ -1,0 +1,196 @@
+{
+    "pajzsokfegyvercsoport": {
+        "id": "pajzsokfegyvercsoport",
+        "name": "Pajzsok fegyvercsoport",
+        "info": "A pajzsok a harcosok védelmét szolgáló eszközök, melyeket bizonyos\nesetekben támadásra is lehet használni, amely a legtöbb esetben nem\nmás, mint az ellenfél eltaszítása, felborítása. Kiképzésükbõl és anya-\ngukból adódó sajátosságaik \u2013 hegyes fémköldök, éles perem \u2013 lehetõ-\nvé teszik a pajzzsal való sebzést is. Sebzésszorzójuk (fegyvererõ) a ki-\nképzéstõl  függõen  1-3.  Amennyiben  a  pajzsokat  csak  védekezésre\nhasználják, gyorsaságuk nem számít bele az Összesített Gyorsaságba.\n",
+        "elemek": {
+            "tarcsapajzs": {
+                "id": "tarcsapajzs",
+                "name": "Tárcsapajzs",
+                "info": "Gyorsaság: 2-5\n \nVáltozatos pajzsok. Formájuk domború kerek, vagy íves háromszög.\nMéretük a harcmodor függvénye, anyaguk változatos \u2013 a fûzfonattól a\nkovácsolt acélig (ez a pajzs tartóssága szempontjából fontos \u2013 a fûz-\nfonat pajzs egy csatánál többet bajosan bír ki). Közelharcban a karak-\nter  védettsége  a  \nfegyverhasználat\n(pajzsra)  jártasság  függvénye,  íjá-\nszok ellen a pajzs mérete a meghatározó.\n",
+                "cost": {
+                    "min": 15,
+                    "max": 85,
+                    "currency": "ezüst"
+                }
+            },
+            "lovassagitarcsapajzs": {
+                "id": "lovassagitarcsapajzs",
+                "name": "Lovassági tárcsapajzs",
+                "info": "Gyorsaság: 5\n \nSzögletes, ívesen hajlított pajzs, melynek a jobb felsõ peremén mélye-\ndést  készítenek  a  kopjaszárnak.  A bal  felsõ  peremét  gyakran  csúcso-\nsan felhúzzák, hogy jobban védelmezze a lovas nyakát és fejét az ol-\ndalról érkezõ csapásoktól.\n",
+                "cost": {
+                    "min": 10,
+                    "max": 20,
+                    "currency": "arany"
+                }
+            },
+            "drenpajzs": {
+                "id": "drenpajzs",
+                "name": "Drén pajzs",
+                "info": "Gyorsaság: 7-9\n \nFordított csepp alakú, nagyméretû pajzs. Egykor általánosan elterjedt\nvolt, ám a falanx-taktika eltûnésével kizárólag a lovagi harcmodor ré-\nsze lett. Hosszan lenyúló alsó pereme a lovas lábát is védelmezi.\n",
+                "cost": {
+                    "min": 10,
+                    "max": 20,
+                    "currency": "arany"
+                }
+            },
+            "allopajzs": {
+                "id": "allopajzs",
+                "name": "Állópajzs",
+                "info": "Gyorsaság: 15\n \nAz állópajzs, vagy pavéze, szögletes, földre állítható nagypajzs, meg-\nerõsített és kiugró gerinccel, amely a számszeríjak támasztékául szol-\ngál. Teljességgel alkalmatlan támadásra. Gyakorta építenek az össze-\nakasztott  pavézékbõl  pajzsfalat,  amely  mögé  behúzódhatnak  a  lán-\ndzsások és az íjászok. A kisebb pavézék, melyekkel mozgó harcot (vé-\ndekezést) is lehet folyatni, nem alkalmasak pajzsfal építésére, ugyan-\nakkor térdelõ számszeríjászok támasztékul használhatják.\n",
+                "cost": {
+                    "min": 5,
+                    "max": 15,
+                    "currency": "arany"
+                }
+            }
+        }
+    },
+    "vertek": {
+        "id": "vertek",
+        "name": "Vértek",
+        "info": "A vértezetek viselésére általában nincs külön szabály (sem jártasság),\nmindig  a  logika  az  irányadó.  Pl.  komplett  lemezvértet  egyedül  kószáló\nlovagok bajosan viselhetnek, hiszen nincs, aki rájuk adná. Melegebb ég-\nhajlaton kifejezetten halálos dolog teljes lemezvértet hordani \u2013 amelyet\njó vastagon alá is kell bélelni, nehogy horzsolásokat, sebeket és fekélye-\nket okozzon a gazdájának \u2013, ugyanis egy szép napon a halál hõguta ké-\npében látogatja meg hõsünket. Esõs, párás idõben mindenféle fémvérte-\nzet rozsdásodik (kivéve a hanhorti fém és a mágikusan kezelt fémek, fel-\ntéve, hogy a mágia kifejezetten tartalmazza a \u201Erozsdamentesítõ\u201D hatást),\namely növeli a gyorsaságmódosítóját, és az elhanyagolt vértek nem ké-\npesek teljes mértékben ellátni védelmi funkciójukat. A sodronyvért rozs-\ndásodása különösen alattomos, mivel az állandóan ledörzsölõdõ rozsda-\nszemek bejutnak a ruházat alá, és a bõrt irritálva súlyos fekélyeket okoz-\nnak.  (A rozsdásodás  ellen  legjobb  orvosság  az  állandó  sikálás  \u2013  finom\nhomok  és  disznózsír  keverékével  \u2013,  valamint  az  olajozás,  zsírozás.)\n",
+        "elemek": {
+            "alkarvedo": {
+                "id": "alkarvedo",
+                "name": "Alkarvédõ",
+                "info": "Gyorsaság: 1\n \nKovácsolt fém, a teljes vértezet része, ritkán külön is használják. Az\nelcsúszott  kardcsapásoktól  védheti  meg  viselõjét,  aktív  védekezésre\n(hárításra) nem alkalmas.\n",
+                "cost": {
+                    "min": 5,
+                    "max": 10,
+                    "currency": "ezüst"
+                }
+            },
+            "borruha": {
+                "id": "borruha",
+                "name": "Bõrruha",
+                "info": "GyM: 0-1\nSzint: 1-2\nSúly: 2-6 kg\nA vastag  bõrruhák,  szõrmék  tompítják  némileg  a  testet  ért  csapások\nerejét.\n",
+                "cost": {
+                    "min": 1,
+                    "max": 7,
+                    "currency": "arany"
+                }
+            },
+            "nemezvert": {
+                "id": "nemezvert",
+                "name": "Nemezvért",
+                "info": "GyM: 1-2\nSzint: 1-3\nSúly: 1-5 kg\nKeményített gyapjúból (nemez), vagy növényi rostokból (posztó) ké-\nszített vért. Sisak és mellényszerû vért alkotja, más testrészek védel-\nmére nem alkalmas.\n",
+                "cost": {
+                    "min": 4,
+                    "max": 10,
+                    "currency": "arany"
+                }
+            },
+            "kemenyitettborvert": {
+                "id": "kemenyitettborvert",
+                "name": "Keményített bõrvért ",
+                "info": "GyM: 2-3\nSzint: 2-4 \nSúly: 3-6 kg\nSisak és mellvért alkotja, más testrészek védelmére nem alkalmas.\n",
+                "cost": {
+                    "min": 2,
+                    "max": 8,
+                    "currency": "arany"
+                }
+            },
+            "szegecseltborvert": {
+                "id": "szegecseltborvert",
+                "name": "Szegecselt bõrvért",
+                "info": "GyM: 1-3\nSzint: 3-5\nSúly: 4-10 kg\nSisak és mellvért alkotja, más testrészek védelmére nem alkalmas.\n",
+                "cost": {
+                    "min": 5,
+                    "max": 10,
+                    "currency": "arany"
+                }
+            },
+            "pikkelyvert": {
+                "id": "pikkelyvert",
+                "name": "Pikkelyvért",
+                "info": "GyM: 2-7\nSzint: 3-6\nSúly: 8-15 kg\nPosztómellényre, vagy posztókabátra varrt, tetõcserépszerûen elhelye-\nzett fémpikkelyek alkotják. A kabátváltozatát \nbrigantin\nnéven ismerik,\nennek gyorsaságmódosítója viszonylag nagy, ugyanakkor majdnem a\nteljes testfelületen véd. Bõrruhával sosem készítik, mert a sûrû varra-\ntok mentén a bõr széthasad.\n",
+                "cost": {
+                    "min": 20,
+                    "max": 40,
+                    "currency": "arany"
+                }
+            },
+            "sodronyvert": {
+                "id": "sodronyvert",
+                "name": "Sodronyvért",
+                "info": "GyM: 3-8\nSzint: 3-6\nSúly: 8-20 kg\nAcél láncszemekbõl szõtt, ruhaszerû vértezet. Egyes vidékeken lánc-\ningnek is hívják. Teljes sodronyvért változata a test egész felületét vé-\ndi (csuklya, hosszú-ujjú ing, harisnya). A sodrony szövési technikája\nalapján (hány gyûrûsor kapcsolódik egymáshoz) létezik egyszeresen,\nkétszeresen és háromszorosan fonatolt sodronyvért. Ahogy a sodrony\nsûrûsödik,  úgy  válik  mind  ellenállóbbá,  nehezebbé  és  merevebbé  a\nsodronyvért, amely a karakterisztikájában is tükrözõdik.\n",
+                "cost": {
+                    "min": 25,
+                    "max": 100,
+                    "currency": "arany"
+                }
+            },
+            "szalagpantosvertezet": {
+                "id": "szalagpantosvertezet",
+                "name": "Szalagpántos vértezet",
+                "info": "GyM: 3-6\nSzint: 2-4\nSúly: 2-10 kg\nA test  különbözõ  részeire  (fõként  a  végtagokra)  tekert  fémszalagok\nösszessége.\n",
+                "cost": {
+                    "min": 20,
+                    "max": 80,
+                    "currency": "arany"
+                }
+            },
+            "mellvert": {
+                "id": "mellvert",
+                "name": "Mellvért",
+                "info": "GyM: 2-5\nSzint: 4-7\nSúly: 3-6 kg\nSodronyinggel kombinálva alkalmazzák, gyorsaságmódosítója a sod-\nronyvért  nagyságától  függ.  (A mellvért  valójában  a  teljes  lemezvért-\nnek a mellkast védõ része.)\n",
+                "cost": {
+                    "min": 20,
+                    "max": 40,
+                    "currency": "arany"
+                }
+            },
+            "lemezvert": {
+                "id": "lemezvert",
+                "name": "Lemezvért ",
+                "info": "GyM: 10-15\nSzint: 6-10\nSúly: 9-20 kg\nFél- és teljes-vért formája ismert. A félvért csak a felsõtestet védi, bár\nolykor hosszított csataszoknyával is ellátják, amely az ágyékot takar-\nja. A teljes-vért az egész testet védelmezi, a sisaktól a páncélcipõig. A\nlemezvértekhez mindig vastag alsóruházatot viselnek, ellenkezõ eset-\nben a fémlemezek jobban meggyötörnék hordozójuk testét, mint egy\nszakavatott kínzómester.\n",
+                "cost": {
+                    "min": 200,
+                    "max": 1500,
+                    "currency": "arany"
+                }
+            },
+            "csatapancel": {
+                "id": "csatapancel",
+                "name": "Csatapáncél",
+                "info": "GyM: 10-15\nSzint: 10\nSúly: 2-12 kg\nMágikus teljesvértezet, melyet viselõje egyedül képes le és fölvenni.\nLegálisan kizárólag valamely lovagrend tagja viselheti \u2013 de a lovag-\nrendek  közül  is  csak  néhányban  ismerik  a  csatapáncélt,  fõleg\nGerondaron,  elvétve  a  Zhíl  Birodalomban  \u2013  bár  olykor  feltûnik  egy-\negy  ütött-kopott  darab  valamely  varázstárgyakkal  kereskedõ  alvilági\nalaknál, ahol horribilis összegekért elvileg bárki hozzájuthat.\n",
+                "cost": {
+                    "min": 2000,
+                    "max": 2100,
+                    "currency": "arany"
+                }
+            },
+            "borsisak": {
+                "id": "borsisak",
+                "name": "Bör Sisak",
+                "info": "GyM: 0\nSzint: 1\nSúly: 1\nTöbbnyire a vértek kiegészítõi, de viselhetõek önállóan is. Különféle\nkiképzéssel, többféle anyagból készülnek. Szintjüket \u2013 mely az anyag\ntartósságától és a fej-takarás pontosságából adódik \u2013 csakis akkor kell\nfigyelembe venni, ha kifejezetten a fejet éri támadás.\n",
+                "cost": {
+                    "min": 1,
+                    "max": 5,
+                    "currency": "ezüst"
+                }
+            },
+            "femsisak": {
+                "id": "femsisak",
+                "name": "Fém Sisak",
+                "info": "GyM: 1\nSzint: 3\nSúly: 2 kg\n Nyilt sisak. Figyelembe kell venni, ha kifejezetten a fejet éri támadás.",
+                "cost": {
+                    "min": 3,
+                    "max": 7,
+                    "currency": "arany"
+                }
+            },
+            "lovagisisak": {
+                "id": "sisakok",
+                "name": "Sisakok",
+                "info": "GyM: 1\nSzint: 5\nSúly: 3 kg\nZárt sisak. Csökkenti az észlelést.Figyelembe venni, ha kifejezetten a fejet éri támadás.\n",
+                "cost": {
+                    "min": 40,
+                    "max": 100,
+                    "currency": "arany"
+                }
+            }
+        }
+    }
+}

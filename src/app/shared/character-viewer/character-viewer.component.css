@@ -47,3 +47,9 @@ img {
     margin: 0 2.5%;
     position: relative;
 }
+input[type=number]{
+    width: 3em;
+} 
+ul {
+    list-style-type: none;
+  }

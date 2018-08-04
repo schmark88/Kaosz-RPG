@@ -1,4 +1,4 @@
-import {CharacterAttribute} from './charater-attribute';
+import { CharacterAttribute } from './charater-attribute';
 
 export class PlayerCharacter {
     id: string;
@@ -9,6 +9,11 @@ export class PlayerCharacter {
     speed: number;
     hitpoints: number;
     mana: number;
+    magicResist: number;
+    money: number;
+    items: JSON[] = [];
+    equipedWeapons: JSON[] = [];
+    equipedArmors: JSON[] = [];
 
     // Main attributes
     physique: CharacterAttribute;
@@ -61,27 +66,31 @@ export class PlayerCharacter {
 
         this.goodFateBoundary = 33;
         this.badFateBoundary = 66;
+        this.equipedArmors = [];
+        this.equipedWeapons = [];
     }
 
     maxHP() {
         return Math.round(this.physique.base * 1.2 + 20);
     }
     maxMana() {
-        return this.essence.base;
+        return Math.round(this.essence.base);
     }
 
     effectiveMana() {
         if (this.skills['esszenciafelszabaditas']) {
-            return this.magicpower.base * 0.1 * this.skills['esszenciafelszabaditas'].level;
+            return Math.round(this.magicpower.base * 0.1 * this.skills['esszenciafelszabaditas'].level);
         }
         return 0;
     }
 
     maxMagicResist() {
         if (this.skills['esszenciapajzsaktivizalas']) {
-            return (this.essenceshield.base * 0.2) + (this.essenceshield.base * 0.1 * this.skills['esszenciapajzsaktivizalas'].level);
+            return Math.round(
+                (this.essenceshield.base * 0.2) + (this.essenceshield.base * 0.1 * this.skills['esszenciapajzsaktivizalas'].level)
+            );
         }
-        return this.essenceshield.base * 0.2;
+        return Math.round(this.essenceshield.base * 0.2);
     }
 
     setupRace(race: any) {
@@ -113,6 +122,7 @@ export class PlayerCharacter {
         this.skills = JSON.parse('{}');
         this.skillCosts = JSON.parse('{}');
         this.disAdvantages = JSON.parse('{}');
+        this.items = [];
     }
     getBaseAttributeSum(): number {
         return this.physique.base + this.consciousness.base + this.aptitude.base + this.essence.base;
@@ -137,6 +147,106 @@ export class PlayerCharacter {
         });
         return sum;
     }
+
+    getExtraDmgMult() {
+        if (this.strenght.base > 90) {
+            return;
+        }
+        if (this.strenght.base > 75) {
+            return 2;
+        }
+        if (this.strenght.base > 60) {
+            return 1;
+        }
+        return 0;
+    }
+
+    getWeaponDMGMultipAsString() {
+        let output = '';
+        const extraMultip = this.getExtraDmgMult();
+
+        this.equipedWeapons.forEach(element => {
+            const str = element['strenght'] + extraMultip;
+            output += str;
+            console.log(str);
+            if (this.equipedWeapons.indexOf(element) < this.equipedWeapons.length - 1) {
+                output += ' | ';
+            }
+        });
+        return output;
+    }
+
+    getArmorValueAsString() {
+        let output = '';
+        let sum = 0;
+
+        this.equipedArmors.forEach(element => {
+            output += element['strenght'];
+            sum += element['strenght'];
+            if (this.equipedArmors.indexOf(element) < this.equipedArmors.length - 1) {
+                output += '+';
+            }
+
+        });
+        if (this.equipedArmors.length < 2) {
+            output = '' + sum;
+            return output;
+        } else {
+            output += '=' + sum;
+            return output;
+        }
+
+    }
+
+    getTotalSpeedAsString() {
+        let sum = this.speed;
+        let output = '' + sum;
+        const combinedarray = [...this.equipedArmors, ...this.equipedWeapons]
+
+        combinedarray.forEach(element => {
+            output += '+' + element['speed'];
+            sum += element['speed'];
+
+        });
+        if (combinedarray.length < 1) {
+            output = '' + sum;
+            return output;
+        } else {
+            output += '=' + sum;
+            return output;
+        }
+    }
+
+    getWeaponsArray() {
+        const array = [];
+        this.items.forEach(element => {
+            if (['1H', '2H'].includes(element['type'])) {
+                array.push(element);
+            }
+        });
+        return array;
+    }
+
+    getArmorsArray() {
+        const array = [];
+        this.items.forEach(element => {
+            if (['S', 'A'].includes(element['type'])) {
+                array.push(element);
+            }
+        });
+        return array;
+    }
+
+    getMiscArray() {
+        const array = [];
+        this.items.forEach(element => {
+            if (element['type'] === undefined) {
+                array.push(element);
+            }
+        });
+        return array;
+    }
+
     getAttributeValue(attributeName): number {
         if (attributeName === 'fizikum') {
             return this.physique.base;
@@ -181,7 +291,16 @@ export class PlayerCharacter {
     }
 
     prepForSave() {
-        this.skillPoints -= this.calculateSkillCosts();
+        if (!this.mana){
+            this.mana = this.maxMana();
+        }
+        if (!this.hitpoints){
+            this.hitpoints = this.maxHP();
+        }
+        if (!this.magicResist){
+            this.magicResist = this.maxMagicResist();
+        }
+        this.skillPoints += this.calculateSkillCosts();
         this.skillCosts = JSON.parse('{}');
         if (this.id) {
             this.id = this.name + new Date();
@@ -197,6 +316,8 @@ export class PlayerCharacter {
             raceId: this.raceId,
             speed: this.speed,
             hitpoints: this.hitpoints,
+            mana: this.mana,
+            magicResist: this.magicResist,
             physique: this.physique.toJSON(),
             strenght: this.strenght.toJSON(),
             stamina: this.stamina.toJSON(),
@@ -214,9 +335,10 @@ export class PlayerCharacter {
             goodFateBoundary: this.goodFateBoundary,
             badFateBoundary: this.badFateBoundary,
             specials: this.specials,
-            skillCosts: this.skillCosts,
             disAdvantages: this.disAdvantages,
-            skills: this.skills
+            skills: this.skills,
+            money: this.money,
+            items: this.items
 
         };
     }
@@ -228,6 +350,8 @@ export class PlayerCharacter {
         this.raceName = json.raceName;
         this.speed = json.speed;
         this.hitpoints = json.hitpoints;
+        this.mana = json.mana;
+        this.magicResist = json.magicResist;
 
         this.physique.fromJSON(json.physique);
         this.strenght.fromJSON(json.strenght);
@@ -252,5 +376,7 @@ export class PlayerCharacter {
         this.disAdvantages = json.disAdvantages;
         this.goodFateBoundary = json.goodFateBoundary;
         this.badFateBoundary = json.badFateBoundary;
+        this.money = json.money;
+        this.items = json.items;
     }
 }

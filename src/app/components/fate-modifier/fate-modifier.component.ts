@@ -23,7 +23,7 @@ export class FateModifierComponent implements OnInit {
   }
 
   getFateCost(): number {
-    const cost = (this.originalGoodFate - this.player.goodFateBoundary) * -150 + (this.originalBadFate - this.player.badFateBoundary) * 150;
+    const cost = (this.originalGoodFate - this.player.goodFateBoundary) * 150 + (this.originalBadFate - this.player.badFateBoundary) * 150;
     this.player.skillCosts['fate'] = cost;
     return cost;
   }

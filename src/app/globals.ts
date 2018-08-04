@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { PlayerCharacter } from './player-character';
+import { PersistenceService, StorageType } from 'angular-persistence';
+import * as cloneDeep from 'lodash/cloneDeep';
 import * as advantagesRaw from '../assets/json/elonyok.json';
 import * as disAdvantagesRaw from '../assets/json/hatranyok.json';
 import * as nightSkills from '../assets/json/skills/ejszaka.json';
@@ -9,14 +10,17 @@ import * as everydaySkills from '../assets/json/skills/hetkoznapok.json';
 import * as jobSkills from '../assets/json/skills/szakmak.json';
 import * as scienceSkills from '../assets/json/skills/tudomany.json';
 import * as bloodSkills from '../assets/json/skills/ver.json';
-import * as cloneDeep from 'lodash/cloneDeep';
-import { PersistenceService, StorageType } from 'angular-persistence';
+import * as weapons from '../assets/json/fegyverek.json';
+import * as armors from '../assets/json/vertek.json';
+import * as mixed_goods from '../assets/json/felszereles_grouped.json';
+import { PlayerCharacter } from './player-character';
 
 
 @Injectable()
 export class Globals {
     baseSkillPoints = 10000;
     baseAttributePoints = 220;
+    baseMoney = 1000;
     player = new PlayerCharacter();
     advantages = advantagesRaw;
     disAdvantages = disAdvantagesRaw;
@@ -24,12 +28,16 @@ export class Globals {
     presetMaxLevel = 3;
     storedCharacters: PlayerCharacter[];
     activeCharacter: PlayerCharacter;
+    commonItems = {};
 
-    private CHARACTERS = "chars";
+    private CHARACTERS = 'chars';
 
     private storage_type = StorageType.LOCAL;
 
     constructor( private persistenceService: PersistenceService) {
+        this.commonItems['weapons'] = cloneDeep(weapons.default);
+        this.commonItems['armors'] = cloneDeep(armors.default);
+        this.commonItems['mixed_goods'] = cloneDeep(mixed_goods.default);
         this.resetSkills();
         this.applyPresetMaxLevelForSkills();
         this.storedCharacters = [];
@@ -46,19 +54,19 @@ export class Globals {
         const json = JSON.parse('[]');
         this.storedCharacters.forEach(element => {
             json.push(element.toJson());
-            console.log("save: "+element.toJson());
+            //console.log("save: "+element.toJson());
         });
         this.persistenceService.set(this.CHARACTERS, json, {type: this.storage_type});
     }
     resetSkills() {
         this.skills = JSON.parse('{}');
-        this.skills[nightSkills['koldulas'].jartCsop] = cloneDeep(nightSkills);
-        this.skills[lightSkills['magiaelmelet'].jartCsop] = cloneDeep(lightSkills);
-        this.skills[medicineSkills['diagnozis'].jartCsop] = cloneDeep(medicineSkills);
-        this.skills[everydaySkills['ertekbecsles'].jartCsop] = cloneDeep(everydaySkills);
-        this.skills[jobSkills['fegyverjavitas'].jartCsop] = cloneDeep(jobSkills);
-        this.skills[scienceSkills['oktatas'].jartCsop] = cloneDeep(scienceSkills);
-        this.skills[bloodSkills['fegyverforgatas'].jartCsop] = cloneDeep(bloodSkills);
+        this.skills[nightSkills['koldulas'].jartCsop] = cloneDeep(nightSkills.default);
+        this.skills[lightSkills['magiaelmelet'].jartCsop] = cloneDeep(lightSkills.default);
+        this.skills[medicineSkills['diagnozis'].jartCsop] = cloneDeep(medicineSkills.default);
+        this.skills[everydaySkills['ertekbecsles'].jartCsop] = cloneDeep(everydaySkills.default);
+        this.skills[jobSkills['fegyverjavitas'].jartCsop] = cloneDeep(jobSkills.default);
+        this.skills[scienceSkills['oktatas'].jartCsop] = cloneDeep(scienceSkills.default);
+        this.skills[bloodSkills['fegyverforgatas'].jartCsop] = cloneDeep(bloodSkills.default);
     }
 
     applyPresetMaxLevelForSkills() {
@@ -110,5 +118,17 @@ export class Globals {
         this.generateArray( player.skills).forEach(skill => {
             this.skills[skill.jartCsop][skill.id] = skill;
         });
+    }
+    convertMoneyToGS(money) {
+        const gold = Math.floor(money / 10);
+        const silver = money % 10;
+        return {'gold': gold, 'silver': silver};
+    }
+    convertGSToMoney(gold, silver) {
+        return gold * 10 + silver;
+    }
+    getMoneyInStringFormat(money) {
+        const array = this.convertMoneyToGS(money);
+        return array.gold + "g "+array.silver+"s";
     }
 }

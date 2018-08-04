@@ -36,6 +36,7 @@ export class CharGenBasicsComponent implements OnInit, AfterViewChecked {
     this.globals.applyPresetMaxLevelForSkills();
     this.selectedRace = race;
     this.player.setupRace(this.selectedRace);
+    this.player.money = this.globals.baseMoney;
     this.updatePointsBasedOnAge();
     this.setRaceMaxSkillLevels();
     this.addRaceSkills();

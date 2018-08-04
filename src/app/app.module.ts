@@ -21,6 +21,8 @@ import { CharacterGeneratorComponent } from './shared/character-generator/charac
 import { CharacterManagerComponent } from './shared/character-manager/character-manager.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CharacterViewerComponent } from './shared/character-viewer/character-viewer.component';
+import { ItemBrowserComponent } from './components/item-browser/item-browser.component';
+import { StatusBarComponent } from './components/status-bar/status-bar.component';
 
 
 
@@ -38,7 +40,9 @@ import { CharacterViewerComponent } from './shared/character-viewer/character-vi
     MainNavBarComponent,
     CharacterGeneratorComponent,
     CharacterManagerComponent,
-    CharacterViewerComponent
+    CharacterViewerComponent,
+    ItemBrowserComponent,
+    StatusBarComponent
   ],
   imports: [
     BrowserModule,

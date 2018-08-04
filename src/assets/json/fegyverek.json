@@ -1,0 +1,1227 @@
+{
+    "kardfegyvercsoport": {
+        "id": "kardfegyvercsoport",
+        "name": "Kardok",
+        "info": "A kard a harcosok legfontosabb fegyvere, mindennapi társa, szinte barátja. Hosszabb-rövidebb pengéből, keresztvasból és markolatból állnak. A kardok igen elterjedtek Worluk összes földrészén, mert hatékonyak,  támadásra  és  védekezésre  egyaránt  alkalmasak,  viszonylag  olcsóak és könnyen előállíthatóak – ugyanakkor az igazán jó pengék a legdrágább és legnehezebben előállítható fegyverek között vannak. ",
+        "elemek": {
+            "egyeneskard": {
+                "id": "egyeneskard",
+                "name": "Egyenes kard",
+                "info": "  Más néven hosszúkard. Egyenes pengéje 80-100 cm, rendszerint mindkét élre kifent. Egykezes. Az elfek és egyéb tündenépek hosszabb, kecsesebb változatokat használnak, az ember-országok reguláris hadseregeiben gyengébb minőségű acélból vaskosabb pengéket kovácsolnak. ",
+                "cost": {
+                    "min": 70,
+                    "max": 150
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 3,
+                    "max": 6
+                },
+                "type": "1H"
+            },
+            "rovidkard": {
+                "id": "rovidkard",
+                "name": "Rövid kard ",
+                "info": "  A  dárdával,  alabárddal  fölszerelt  gyalogság  és  az  íjászok  második fegyvere. Vaskosabb pengéje 40-70 cm, kétélű. ",
+                "cost": {
+                    "min": 40,
+                    "max": 100
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 5
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 4
+                },
+                "type": "1H"
+            },
+            "szablya": {
+                "id": "szablya",
+                "name": "Szablya ",
+                "info": "  Különféle  változatai  a  könnyűlovasságnál,  a  nomád  népeknél  és  a jidori harciskolákban fordulnak elő. Pengéje gyengén hajlott, fok-élre köszörült  (fok-él:  a  pengeív  külső  éle  és  a  belső  perem  kardfok  alatti szakasza), vércsatornával könnyített. A penge hossza 50-110 cm. Bizonyos típusoknál (nomád) a markolat szöget zár be a penge tengelyével. ",
+                "cost": {
+                    "min": 200,
+                    "max": 400
+                },
+                "speed": {
+                    "min": 4,
+                    "max": 6
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 6
+                },
+                "type": "1H"
+            },
+            "jatagan": {
+                "id": "jatagan",
+                "name": "Jatagán ",
+                "info": "  Fok-élre köszörült, a szablyánál is enyhébb ívű, 60-90 cm-es pengéjű kard. Érdekessége, hogy a pengeív belső peremét élezik – tehát éppen fordítva, mint a szablyáét. Keresztvasa nincsen, vagy csupán egy kerek  acéllemez,  amely  alig  takarja  az  öklöt.  Markolata  gyakran  valamely állati csont megmunkált vége. Az olcsóbb, gyengébb minőségű darabok pengéjének hátsó, életlen peremét T-keresztmetszetűre kalapálják, hogy védjék a töréstől. ",
+                "cost": {
+                    "min": 50,
+                    "max": 150
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 5
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 5
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "nehezkardfegyvercsoport": {
+        "id": "nehezkardfegyvercsoport",
+        "name": "Nehézkardok",
+        "info": "A kardok nagyobb, nehezebb családja, melyet páncélos vitézek forgatnak páncélos vitézek ellen. Hatékony forgatásukhoz kimagasló Erő Főérték  szükséges:  50-es  Erejűnél  gyengébb  karakter  képtelen  forgatni őket. Az 50-65 közötti Erejű karakter kezében a fegyver Gyorsaságához +10 adódik, a fegyver Ereje feleződik. ",
+        "elemek": {
+            "pallos": {
+                "id": "pallos",
+                "name": "Pallos ",
+                "info": "  Két kézzel forgatott, kétélű, egyenes kard. Markolatgombjára gyakran vaskos horgot erősítenek, melyet a lovag  fegyverövébe akasztva könynyebbé válik a vívást – s persze jóval kiszámíthatóbbá is. Pengéje 150 centiméter. Éle gyakran lángolt, azaz hullámosra képzett. ",
+                "cost": {
+                    "min": 200,
+                    "max": 400
+                },
+                "speed": {
+                    "min": 10,
+                    "max": 12
+                },
+                "strenght": {
+                    "min": 7,
+                    "max": 10
+                },
+                "type": "2H"
+            },
+            "fattyukard": {
+                "id": "fattyukard",
+                "name": "Fattyúkard ",
+                "info": "  Nevezik másfél-kezes kardnak is, mivel markolata hosszan kiképzett, s hol egy kézzel, hol két kézzel forgatható. Pengéje rövidebb és vékonyabb, mint a pallosé. Az egyetlen nehézkard, amelyet 55-ös Erő Főértékkel is lehet forgatni: ekkor viszont csakis két kézzel. Az egykezes harcmodorhoz 65-ös főérték szükséges. ",
+                "cost": {
+                    "min": 200,
+                    "max": 400
+                },
+                "speed": {
+                    "min": 7,
+                    "max": 9
+                },
+                "strenght": {
+                    "min": 6,
+                    "max": 9
+                },
+                "type": "2H"
+            },
+            "lovagkard": {
+                "id": "lovagkard",
+                "name": "Lovagkard ",
+                "info": "  Vaskos, nehéz, 80-120 cm-es egyenes pengéjű, kétélű, egykezes fegyver.  Kifejezetten  a  nehézvértes  harcmodorhoz  alkalmazzák,  nehéz pengéje képes bezúzni a vérteket. A kard foka lekerekített, mivel a nehéz pengével gyakorlatilag lehetetlen döfni. ",
+                "cost": {
+                    "min": 300,
+                    "max": 500
+                },
+                "speed": {
+                    "min": 7,
+                    "max": 8
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 7
+                },
+                "type": "2H"
+            },
+            "szeleskard": {
+                "id": "szeleskard",
+                "name": "Széleskard ",
+                "info": "  A kerin  Feketevértesek  tradicionális  fegyvere.  A lovagkard  hegyesre reszelt  fokú  változata,  amelyen  keresztvas  helyett  díszesen  fonatolt markolatkosár védi a kezet. ",
+                "cost": {
+                    "min": 250,
+                    "max": 380
+                },
+                "speed": {
+                    "min": 7,
+                    "max": 8
+                },
+                "strenght": {
+                    "min": 6,
+                    "max": 6
+                },
+                "type": "2H"
+            },
+            "handzsar": {
+                "id": "handzsar",
+                "name": "Handzsár",
+                "info": "  Az egyetlen ívelt pengéjű, egyélű nehézkard. A penge vége szélesebb, mint a markolathoz közel. A Kondor-birodalom kialakulófélben lévő nehézlovasságának fegyvere – az orkok egyfajta meghosszabbított fejű  csatabárdként  használják,  ezért  alkalmazzák  a  magaslati  előnnyel rendelkező,  különösebb  vívótudományt  nem  igénylő  nehézlovasságnál –, másutt, mint például Maldiberan különféle államaiban kifejezetten gyalogsági fegyver. ",
+                "cost": {
+                    "min": 60,
+                    "max": 130
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 7
+                },
+                "type": "2H"
+            }
+        }
+    },
+    "vivokardfegyvercsoport": {
+        "id": "vivokardfegyvercsoport",
+        "name": "Vívókardok",
+        "info": "A kardvívás  mestereinek  fegyvere.  A vívókardot  alkalmazó  harcmodor sokkal nagyobb hangsúlyt fektet a vívás technikájára és a villámgyors támadásokra, mint a fegyverek átütőerejére, sebzésére. ",
+        "elemek": {
+            "rapir": {
+                "id": "rapir",
+                "name": "Rapír",
+                "info": "  Főként szúrásra alkalmas, könnyű fegyver. Vékony, egyenes pengéje 80-100 cm, háromszög vagy deltoid keresztmetszetű. A penge hosszában két vagy három fémtaréj fut végig, melyet kiéleznek, ám szerepük elsősorban nem a vágás, hanem a hosszú penge szilárdítása. ",
+                "cost": {
+                    "min": 250,
+                    "max": 400
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 3
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 4
+                },
+                "type": "1H"
+            },
+            "torkard": {
+                "id": "torkard",
+                "name": "Tőrkard ",
+                "info": "  Szúrásra  és  vágásra  egyaránt  alkalmas.  Lapos  keresztmetszetű,  vékony, egyenes pengéje 70-80 cm. Keresztvasát gyakran fonott markolatkosár  is  kiegészíti.  Gazdagon  díszített  változatai  a  főúri  viseletek méregdrága kiegészítői. ",
+                "cost": {
+                    "min": 250,
+                    "max": 400
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 4
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 5
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "torokfegyvercsoport": {
+        "id": "torokfegyvercsoport",
+        "name": "Tôrökök",
+        "info": "A kardok családjának legkisebb tagjai. Vívásra nem alkalmasak; a tőröket alkalmazó harcmodor a testcselekre és a belharcra alapoz. Az ellenfelek közelsége miatt a kések és tőrök kiválóan alkalmasak célzott támadásokra. A kijelölt testrészekre való támadáskor a tőrök és kések szintmódosítói nem érvényesek, ahogy a fegyvererő sebzésszorzója sem. ",
+        "elemek": {
+            "tor": {
+                "id": "tor",
+                "name": "Tőr",
+                "info": "  Egyenes  pengéjű,  kétélű  –  néha  egyélű  –  fegyver.  Változatos  pengehossz: 20-60  cm. A rövidebb pengéjű tőrök vaskosak, nehezek, a hoszszabb pengéjűek könnyűek és kecsesek... a leghosszabb tőrök gyakorlatilag  tőrkardnak  számítanak,  így  a  két  fegyvertípus  közt  nincs  éles határ. A hosszú tőrök forgathatóak a tőrkard jártasság szerint is. ",
+                "cost": {
+                    "min": 5,
+                    "max": 15
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 3
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 3
+                },
+                "type": "1H"
+            },
+            "kes": {
+                "id": "kes",
+                "name": "Kés ",
+                "info": "  Számtalan pengeváltozattal, többnyire keresztvas nélkül, vagy a pengekeresztmetszetnél alig nagyobb keresztvassal (keresztlemez) készítik. A kések főképpen szerszámok, és csak másodlagosan fegyverek. ",
+                "cost": {
+                    "min": 1,
+                    "max": 5
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 2
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 2
+                },
+                "type": "1H"
+            },
+            "hegyestor": {
+                "id": "hegyestor",
+                "name": "Hegyestőr",
+                "info": "  Általában  méteres,  háromszög  –  ritkán  négyszög  –  keresztmetszetű pengéje  hegyes  csúcsban  végződik,  melyet  különleges  edzési  eljárásokkal erősítenek. Vágóéle nincsen. A láncingek gyengéit kihasználó fegyver; a hosszú, hegyes penge behatol a láncszemek közé, szétpattintja azokat, úgy sebez. A kovácsolt vértezetekbe könnyen beletörhet, ám a résekbe szúrva használható. Belharcra teljességgel alkalmatlan. ;; ",
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 4
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 3
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "hajitofegyverfegyvercsoport": {
+        "id": "hajitofegyverfegyvercsoport",
+        "name": "Hajítófegyverek",
+        "info": "Kifejezetten dobásra tervezett fegyverek – és nem is mindig tőr alakúak. Laposak, többnyire csupán fém részeik vannak, a markolati részen a fém rovátkolásával érik el, hogy ne csússzon a kézben. Jó dobódinamikával  rendelkeznek,  kiegyensúlyozottak,  viszont  közelharcban rossz fogás esik rajtuk, ráadásul némelyik fegyvertípus kiképzése magát  a  használót  is  veszélyezteti.  Az  ebbe  a  fegyvercsoportba  tartozó fegyverekkel akkor sem lehet közelharcot folytatni, ha a karakter elsajátítaná az adott fegyverre vonatkozó  fegyverforgatás jártasságot. ",
+        "elemek": {
+            "hajitotor": {
+                "id": "hajitotor",
+                "name": "Hajítótőr",
+                "info": "  Egyetlen  darabból  kovácsolt,  fűzlevél  alakú,  kétélű,  mindkét  végén vagy  csak  az  egyiken  hegyes  fegyver.  Keresztvasa  a  legritkább  esetben van, s akkor is csak azért, hogy a használó tapintás útján érzékelni tudja, hol kezdődik a penge. ",
+                "cost": {
+                    "min": 10,
+                    "max": 50
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 2
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 1
+                },
+                "type": "1H"
+            },
+            "jidoricsillag": {
+                "id": "jidoricsillag",
+                "name": "Jidori csillag ",
+                "info": "  Tenyérnyi,  féltenyérnyi  korongok,  deltoidok,  csillag  és  napformák, ívelt  oldalú  négyszögek  –  közepükön  változatos  alakú  lukakkal.  A fegyver minden oldala éles, szögleteik ívesen hegyesre csiszoltak. Repülés  közben  –  a  réseknek  köszönhetően  –  jellegzetes  sivító  hangot adnak. Inkább zavarásra, mintsem sebzésre valóak. ",
+                "cost": {
+                    "min": 10,
+                    "max": 20
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 1
+                },
+                "type": "1H"
+            },
+            "hajitotu": {
+                "id": "hajitotu",
+                "name": "Hajítótű ",
+                "info": "  Végletesen  elnyújtott  hajítótőrök.  Kerek,  vagy  szögletes  keresztmetszetűek,  sosem  laposak.  Arasznyi  hosszúak;  a  mindkét  végükön  hegyes  változatok  orsó  alakúak,  az  egyik  végén  hegyes  változatok  inkább apró, toll nélküli nyílvesszőkhöz hasonlítanak. Inkább zavarásra, mintsem sebzésre valóak. ",
+                "cost": {
+                    "min": 1,
+                    "max": 2
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 0,
+                    "max": 0
+                },
+                "type": "1H"
+            },
+            "hajitobard": {
+                "id": "hajitobard",
+                "name": "Hajítóbárd ",
+                "info": "  Egyetlen  darabból  kovácsolt,  lapos,  balta  formájú  fegyverek.  A baltaélen kívül a hosszan előrenyúló szártüske, a hátranyúló zúzótüske, valamint a vaskosabb, rovátkolt markolat-tüske (lényegében ez a nyél) gondoskodik arról, hogy valamely veszélyes felülete az eldobás után  mindenképpen  találkozzon  az  ellenfél  testével.  Használójuk négy-öt, lapos hajítóbárdot a bal kezébe fogva, hatékonyan képes több ellenfelet sakkban tartani. Bizonyos változataik már nyomokban sem emlékeztetnek a baltára; ezek változatos irányú tüskékkel, kígyóként tekergő éles karokkal ellátott fegyverek, melyek használata valódi művészet.  Gyakori  alkalmazása  a  pajzs  elleni  támadás  –  két-három,  a pajzsba ágyazódó hajítóbárd gyakorlatilag lehetetlenné teszi a pajzzsal való védekezést. ",
+                "cost": {
+                    "min": 10,
+                    "max": 50
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 3
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 3
+                },
+                "type": "1H"
+            },
+            "mesterkorong": {
+                "id": "mesterkorong",
+                "name": "Mesterkorong ",
+                "info": "  Egy-másfél  arasznyi  átmérőjű,  üres  közepű  korong  (lapos  gyűrű), melynek külső pereme élezett, a belső tompán lekerekített. Bizonyos változatai nem teljesen laposak, ezek íve egy kupola peremének felel meg. A kúpos korongokat magasabb szintű használóik (7. szinttől) képesek úgy eldobni, hogy találat nélküli dobás esetén visszatérjenek. ",
+                "cost": {
+                    "min": 50,
+                    "max": 100
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 1
+                },
+                "type": "1H"
+            },
+            "acelkereszt": {
+                "id": "acelkereszt",
+                "name": "Acélkereszt ",
+                "info": "  A hajítóbárd  letisztult  formája.  Egyetlen  darabból  kovácsolt,  lapos, egyenlő  szárú  kereszt,  melynek  minden  szárán  kiképzik  a  rovátkolt markolati részt, és minden szár végét hegyesre reszelik. Az orkok kecsesebb, egészen vékony kereszteket használnak, melyek szárait fogazottan reszelik, hogy a sebből kitépve elviselhetetlen szenvedést okozzanak (Erő 4). A fogazott keresztek gazdáit kultúrvidékeken könnyen meglincselhetik. ",
+                "cost": {
+                    "min": 1,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 3
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 3
+                },
+                "type": "1H"
+            },
+            "demonbozont": {
+                "id": "demonbozont",
+                "name": "Démonbozont",
+                "info": "  Az  észak-Gerondari  havasi  barbárok  körében  elterjedt  dobófegyver. Nem csak hajításra alkalmazható, hanem közelharcban is, +2 gyorsasággal.  Gyakorlatilag  egy  kardmarkolattal  ellátott,  sokágú  fémdarab, melynek  minden  pontján  éles  vagy  szúró  felületek  váltakoznak  – olyan, mint egy tövestől kitépett, aprócska bokor. Súlya miatt meglehetősen  brutális  sebeket  tud  osztogatni,  ugyanakkor  idomtalan  volta miatt egynél több acélbozontot senki sem hord magánál. A támadódobás  célszámának  30-nál  nagyobb  elvétése  esetén  a  szerteágazó fegyverélek magát a dobót sebzik. ",
+                "cost": {
+                    "min": 1,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 4
+                },
+                "strenght": {
+                    "min": 3,
+                    "max": 5
+                },
+                "type": "1H"
+            },
+            "gerely": {
+                "id": "gerely",
+                "name": "Gerely ",
+                "info": "  Könnyű  dárdaféle,  kifejezetten  hajításra  alkotva.  Hegye  többnyire egyetlen fémtüske, élek nélkül. Közelharcra alkalmatlan, mert a puhafa nyél nem viseli el a nagyobb erőhatást. ",
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 5
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 4
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "buzoganyokfegyvercsoport": {
+        "id": "buzoganyokfegyvercsoport",
+        "name": "Buzogányokok",
+        "info": "A zúzófegyverek legtöbbje ebbe a fegyvercsoportba tartozik. Mélyen zúzott sebeket ejtenek, csontot törnek, belső sérüléseket okoznak; a fej elleni támadásra minden más fegyvernél alkalmasabbak. ",
+        "elemek": {
+            "buzogany": {
+                "id": "buzogany",
+                "name": "Buzogány ",
+                "info": "  A gömbfejű, a tompa vagy hegyes-tüskés és a tollas-gerezdes változatai a legelterjedtebbek. Változatos hosszúságú fa, vagy fém nyélre acélfejet kovácsolnak. A legelterjedtebb, és legolcsóbb zúzófegyver – ugyanakkor  művészi  kivitelezésű,  drágakő-berakásos,  harcra  teljesen  alkalmatlan darabjaik a főurak díszruházatának elengedhetetlen kellékei. ",
+                "cost": {
+                    "min": 60,
+                    "max": 120
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 4,
+                    "max": 7
+                },
+                "type": "1H"
+            },
+            "lancosbuzogany": {
+                "id": "lancosbuzogany",
+                "name": "Láncos buzogány ",
+                "info": "  A nyél és fej közé a nyél hosszának felét kitevő, erős lánc kerül. A vértes lovagok számára készítenek három kisebb fejjel ellátott láncos buzogányt is; ez a változat páncélozatlan felhasználók számára önveszélyes, mivel a három kis fejet nehéz irányítani, így gyakran a használón csattannak. A háromfejű változat vértek elleni harcra alkalmatlan, vértezet nélküli ellenfél ellen viszont +1 sebzésszorzója van. ",
+                "cost": {
+                    "min": 60,
+                    "max": 200
+                },
+                "speed": {
+                    "min": 7,
+                    "max": 9
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 8
+                },
+                "type": "1H"
+            },
+            "keselyucsor": {
+                "id": "keselyucsor",
+                "name": "Keselyűcsőr",
+                "info": "  A buzogány és a csatabárd összeházasításából született, különös fegyver. A  kissé  vaskosabb  nyélre  többnyire  tüskés  buzogányfejet  erősítenek, amelyből  egy  baltaszerű  vágóél  nyúlik  ki.  A vágóél  arasznyi  hosz szú, két-három ujjnyi széles. Kétkezes fegyver, de 65-ös Erő főértéktől egy kézzel is forgatható. ",
+                "cost": {
+                    "min": 60,
+                    "max": 170
+                },
+                "speed": {
+                    "min": 8,
+                    "max": 10
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 9
+                },
+                "type": "1H"
+            },
+            "csatacsillag": {
+                "id": "csatacsillag",
+                "name": "Csatacsillag ",
+                "info": "  A tüskés buzogányok speciális fajtája. A buzogány feje gyakorlatilag eltűnt, s a nyélen öt vaskos tövis található. Négy tövis a nyélre és egymásra is merőleges, az ötödik – a szártüske – a nyél meghosszabbításában nyúlik előre. ",
+                "cost": {
+                    "min": 70,
+                    "max": 140
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 4,
+                    "max": 6
+                },
+                "type": "1H"
+            },
+            "harcikalapacs": {
+                "id": "harcikalapacs",
+                "name": "Harci kalapács ",
+                "info": "  Hosszabb, vagy rövidebb nyelű, szögletes fejű buzogányfajta. A szögletes  fej  két  irányban  nyúlik  túl  a  fegyver  tengelyén,  és  lehet  vaskos zúzófej, valamint vékonyabb átütő-fej. ",
+                "cost": {
+                    "min": 60,
+                    "max": 180
+                },
+                "speed": {
+                    "min": 4,
+                    "max": 8
+                },
+                "strenght": {
+                    "min": 3,
+                    "max": 6
+                },
+                "type": "1H"
+            },
+            "fokos": {
+                "id": "fokos",
+                "name": "Fokos ",
+                "info": "  Könnyű lovassági fegyver, vékony nyéllel, baltaszerű fejjel. A baltafej mögé kalapácsszerű átütő-fej, vagy zúzótüske nyúlik. ",
+                "cost": {
+                    "min": 50,
+                    "max": 150
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 5
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 3
+                },
+                "type": "1H"
+            },
+            "nehezbuzogany": {
+                "id": "nehezbuzogany",
+                "name": "Nehézbuzogány ",
+                "info": "  Két  kézzel  forgatható,  gömbfejű,  vagy  kalapács-kiképzésű  brutális fegyver.  A gömbfejű  változatok  gyakran  tüskézettek.  Forgatásukhoz legalább 65-ös Erő Főérték szükséges. ",
+                "cost": {
+                    "min": 110,
+                    "max": 320
+                },
+                "speed": {
+                    "min": 10,
+                    "max": 14
+                },
+                "strenght": {
+                    "min": 7,
+                    "max": 10
+                },
+                "type": "1H"
+            },
+            "bunkosbot": {
+                "id": "bunkosbot",
+                "name": "Bunkósbot ",
+                "info": "  A legegyszerűbb fegyverek egyike; lényegében egy vaskos, göcsörtös fadarab.  Igényesebbeknek  készíthetik  ólmozott,  szögekkel  kivert, acélrátétekkel megvasalt formában. ",
+                "cost": {
+                    "min": 5,
+                    "max": 24
+                },
+                "speed": {
+                    "min": 4,
+                    "max": 8
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 7
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "csatabardokfegyvercsoport": {
+        "id": "csatabardokfegyvercsoport",
+        "name": "Csatabárdokok",
+        "info": "Vaskos, éles, pengeszerű fémfej jellemző erre a fegyvercsoportra. Kezelésük  korántsem  olyan  egyszerű,  mint  ahogy  látszik;  a  rosszul  tartott, kiforduló, vértezetről visszapattanó baltafej a forgatóját is megsebezheti. ",
+        "elemek": {
+            "szekerce": {
+                "id": "szekerce",
+                "name": "Szekerce ",
+                "info": "  A csatabárdok alaptípusa, valójában inkább szerszám, mint fegyver – legalábbis céljait tekintve. ",
+                "cost": {
+                    "min": 60,
+                    "max": 260
+                },
+                "speed": {
+                    "min": 4,
+                    "max": 6
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 5
+                },
+                "type": "1H"
+            },
+            "csatabard": {
+                "id": "csatabard",
+                "name": "Csatabárd ",
+                "info": "  Ívelt,  vagy  egyenes  élű,  fa-,  fémrátétes  fa-,  vagy  fémnyelű  fegyver. Gyakori  a  bárdfejjel  ellenkező  irányba  nyúló  zúzótüske,  és  a  nyelet meghosszabbító szártüske. ",
+                "cost": {
+                    "min": 80,
+                    "max": 190
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 3,
+                    "max": 7
+                },
+                "type": "1H"
+            },
+            "ketkezescsatabard": {
+                "id": "ketkezescsatabard",
+                "name": "Kétkezes csatabárd ",
+                "info": "  A csatabárd drabálisabb változata. Szinte kizárólag keményfa nyéllel, szár-, és zúzótüske nélkül készítik. A bárdfej éle gyakorta hosszan elnyúlik a nyél markolati vége felé, vagy éppen ellenkezőleg, túlnyúlik a nyél végén. Forgatásához minimum 65-ös Erő Főérték szükséges. ",
+                "cost": {
+                    "min": 160,
+                    "max": 370
+                },
+                "speed": {
+                    "min": 9,
+                    "max": 13
+                },
+                "strenght": {
+                    "min": 6,
+                    "max": 10
+                },
+                "type": "1H"
+            },
+            "ketfejucsatabard": {
+                "id": "ketfejucsatabard",
+                "name": "Kétfejű csatabárd ",
+                "info": "  A kétkezes csatabárd sajátos változata. Kisebb bárdfejjel látják el, ám ebből egyenesen kettővel. Forgatásához minimum 65-ös Erő Főérték szükséges, viszont egy viszonylag gyorsnak mondható, igen hatékony – jobbra-balra vagdalkozó – harci stílust tesz lehetővé. ",
+                "cost": {
+                    "min": 180,
+                    "max": 360
+                },
+                "speed": {
+                    "min": 8,
+                    "max": 10
+                },
+                "strenght": {
+                    "min": 6,
+                    "max": 9
+                },
+                "type": "1H"
+            },
+            "csatacsakany": {
+                "id": "csatacsakany",
+                "name": "Csatacsákány ",
+                "info": "  A fegyvercsoport legfiligránabb tagja. Baltafej helyett csőrszerű, vaskos  nyúlvánnyal  látják  el,  amely  kifejezetten  alkalmas  lemezvértek bezúzására. Ez is azok közé a fegyverek közé tartozik, melyek hétköznapi szerszámnak sem megvetendőek. ",
+                "cost": {
+                    "min": 30,
+                    "max": 140
+                },
+                "speed": {
+                    "min": 4,
+                    "max": 6
+                },
+                "strenght": {
+                    "min": 4,
+                    "max": 7
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "szalfegyverfegyvercsoport": {
+        "id": "szalfegyverfegyvercsoport",
+        "name": "Szálfegyverek",
+        "info": "Kifejezetten  gyalogsági  fegyverek,  hatékony  forgatásukhoz  mindkét kézre szükség van (lándzsavívás). Ismeretes ugyan az ősi falanx harcmodor,  amelynek  során  a  szálfegyvereket  pajzzsal  együtt,  kizárólag döfésre és a rohamok felfogására használták, ám a falanxok a modern hadviselésben  már  nem  állják  meg  a  helyüket.  Worluk  világán,  ha  a dárdás katona visel is pajzsot, azok főként az íjászok elleni védekezésre alkalmas pavézék (nagyméretű szögletes pajzsok), melyeket a kézitusa kialakulásakor eldobálnak. A heggyel ellátott szálfegyverek a roham ellen kiemelt védettséget adnak. ",
+        "elemek": {
+            "landzsa": {
+                "id": "landzsa",
+                "name": "Lándzsa ",
+                "info": "  Rövidebb és vaskosabb heggyel ellátott szálfegyver, 2-3 m hosszú. A hegy gyakran levelet formáz, köpü részén (a lándzsahegy szoknyaszerűen kiszélesedő alsó fele, amelynél fogva a fanyélre erősítik) gyakran kereszttüskék akadályozzák, hogy a lándzsa túl mélyre hatoljon. ",
+                "cost": {
+                    "min": 60,
+                    "max": 320
+                },
+                "speed": {
+                    "min": 6,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 8
+                },
+                "type": "2H"
+            },
+            "darda": {
+                "id": "darda",
+                "name": "Dárda ",
+                "info": "  Hosszabb,  vékonyabb  fémheggyel  ellátott  fegyver.  Kisebb,  de  mélyebb sebeket okoz, mint a lándzsa. Jól hajítható, köpüjén kereszttüske  nincsen.  Gyakori  alkalmazása  a  pajzsba  való  dobás  –  ilyenkor  a dárda átüti a pajzsot, majd súlyánál fogva lehúzza. A pajzs birtokosa vagy eldobja a pajzsot, vagy kihúzza a dárdát... ha marad rá ideje. ",
+                "cost": {
+                    "min": 10,
+                    "max": 100
+                },
+                "speed": {
+                    "min": 6,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 6
+                },
+                "type": "2H"
+            },
+            "pika": {
+                "id": "pika",
+                "name": "Pika ",
+                "info": "  Gyalogsági hosszúlándzsa, 4-5 m-es nyélen, rövid, kúpos fémheggyel. ",
+                "cost": {
+                    "min": 20,
+                    "max": 150
+                },
+                "speed": {
+                    "min": 9,
+                    "max": 11
+                },
+                "strenght": {
+                    "min": 4,
+                    "max": 7
+                },
+                "type": "2H"
+            },
+            "csaklya": {
+                "id": "csaklya",
+                "name": "Csáklya ",
+                "info": "  Dárdaszerű  szálfegyver,  amelynek  a  köpüjéről  horogszerűen  visszahajlik egy második hegy. A horog a lovaskatonák lerántására szolgál. ",
+                "cost": {
+                    "min": 5,
+                    "max": 15
+                },
+                "speed": {
+                    "min": 6,
+                    "max": 8
+                },
+                "strenght": {
+                    "min": 3,
+                    "max": 4
+                },
+                "type": "2H"
+            },
+            "angolnanyars": {
+                "id": "angolnanyars",
+                "name": "Angolnanyárs ",
+                "info": "  Tulajdonképpen  egy  hegyestőr,  kb.  2  m-es  fanyélen.  Olcsó,  viszont könnyen sérül, törik. ",
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 3,
+                    "max": 5
+                },
+                "type": "2H"
+            },
+            "alabard": {
+                "id": "alabard",
+                "name": "Alabárd ",
+                "info": "  Kombinált szálfegyver, amely ötvözi az angolnanyárs (védekezés), a csatabárd  (támadás)  és  a  csáklya  (lerántás)  előnyeit.  A hosszában  elnyújtott,  nem  túl  nehéz  bárdlappal  egybekovácsolt  nyárs  erős,  sokat kibíró  fegyvert  eredményez.  A  nyél  felső  harmadát  oldalpántokkal erősítik, hogy megakadályozzák a fanyél átvágását. ",
+                "cost": {
+                    "min": 70,
+                    "max": 240
+                },
+                "speed": {
+                    "min": 8,
+                    "max": 10
+                },
+                "strenght": {
+                    "min": 6,
+                    "max": 10
+                },
+                "type": "2H"
+            },
+            "csatavilla": {
+                "id": "csatavilla",
+                "name": "Csatavilla ",
+                "info": "  Inkább  látványos,  mint  használható  fegyver  –  a  paraszti  hadak  és  a gladiátorok használják, mások nem. ",
+                "cost": {
+                    "min": 1,
+                    "max": 5
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 4
+                },
+                "type": "2H"
+            },
+            "szigony": {
+                "id": "szigony",
+                "name": "Szigony ",
+                "info": "  Horgas végű dárda, vagy villa. Kiváló halászeszköz, azonban inkább csak kultikus jelentőségű fegyver, mivel sikeres sebzés után igen nehéz kirántani a sebből. Tengerpapok, az ork kalózhajók sámánjai és a gladiátorok használják. ",
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 5,
+                    "max": 7
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 5
+                },
+                "type": "2H"
+            },
+            "hosszubot": {
+                "id": "hosszubot",
+                "name": "Hosszú bot ",
+                "info": "  Eltérően a többi szálfegyvertől, a bot csak saját fegyverhasználat képzettséggel használható fegyverként, más szálfegyverre vonatkozó jártassággal  még  levonásokkal  sem.  Speciális  vívótechnikája  veszedelmes fegyverré teheti, noha magas szintű használói – mondhatni a botvívás  művészei  –  inkább  az  ellenfél  harcképtelenné  tételét,  mintsem megölését tartják szem előtt. ",
+                "cost": {
+                    "min": 2,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 6
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 4
+                },
+                "type": "2H"
+            },
+            "csephadaro": {
+                "id": "csephadaro",
+                "name": "Cséphadaró ",
+                "info": "  Paraszti szerszám, szükség esetén fegyver. A fegyverré alakított cséphadarón szögeket vernek keresztül. ",
+                "cost": {
+                    "min": 5,
+                    "max": 15
+                },
+                "speed": {
+                    "min": 6,
+                    "max": 8
+                },
+                "strenght": {
+                    "min": 3,
+                    "max": 4
+                },
+                "type": "2H"
+            }
+        }
+    },
+    "lovaslandzsafegyvercsoport": {
+        "id": "lovaslandzsafegyvercsoport",
+        "name": "Lovas-lándzsak",
+        "info": "A  szálfegyerek  azon  csoportját  alkotják,  melyeket  kizárólag  a  lovas harcmodorban lehet alkalmazni – ott is csupán rohamra és a menekülők üldözésére  alkalmas;  vívásra,  csatározásra,  hosszas  ütésváltásra  nem. Ezért  a  viszonylag  alacsonyra  meghatározott  fegyvergyorsaságukhoz minden esetben hozzá kell számolni a lovas mozgásából adódó időegységeket. Frontális támadáskor egyetlen ütésváltásnál többre nem alkalmasak, mivel a vágta lendülete az ellenfeleket azonnal tovább sodorja, s az ütközet sűrűjében a hosszú fegyverekkel bajosan lehet harcolni. ",
+        "elemek": {
+            "tarcsaslandzsa": {
+                "id": "tarcsaslandzsa",
+                "name": "Tárcsás lándzsa ",
+                "info": "  Nevezik tornalándzsának is, mert csatacsúcs nélkül a lovagi tornák kedvelt  fegyvere.  A nehézlovasság  rohamfegyvere.  Vékony,  de  erős  nyele 3,5-4 méter hosszú. Csúcsa hosszú és levél alakú, vagy zömök, erőteljes. A kezet és a mell egy részét nagyméretű, kerek tárcsa védi. A lándzsához tartozik a mellvértre szerelt kampó is, amely támadáskor a fegyver súlyát tartja. A rúd végére többnyire címeres zászlócskákat erősítenek. ",
+                "cost": {
+                    "min": 100,
+                    "max": 200
+                },
+                "speed": {
+                    "min": 6,
+                    "max": 8
+                },
+                "strenght": {
+                    "min": 9,
+                    "max": 10
+                },
+                "type": "1H"
+            },
+            "kopja": {
+                "id": "kopja",
+                "name": "Kopja ",
+                "info": "  A pusztai nomádok kedvelt fegyvere. Hossza 4 méter, tompa végén fagolyó  nehezék,  hogy  könnyen  egyensúlyban  lehessen  tartani,  mivel nem a közepén markolják, hanem a hátsó háromnegyedénél. Némely típusánál  a  markolat  előtt  is  található  egy  fagolyó.  Csúcsa  többnyire hengeresen  tövisszerű,  melynek  köpüjére  lófarok-fonatokat,  kicsiny zászlócskákat erősítenek. ",
+                "cost": {
+                    "min": 50,
+                    "max": 150
+                },
+                "speed": {
+                    "min": 4,
+                    "max": 6
+                },
+                "strenght": {
+                    "min": 6,
+                    "max": 9
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "ijakfegyvercsoport": {
+        "id": "ijakfegyvercsoport",
+        "name": "Íjak",
+        "info": "A legelterjedtebb lőfegyverek az íjak. Gyorsak, hatékonyak, ugyanakkor igen érzékenyek az időjárás viszontagságaira, a mechanikai sérülésekre vagy a hosszan tartó feszítettségre. Ugyanannak az íjtípusnak több változatát is készítik; így jönnek létre a különböző erejű íjak, melyeket  gazdájuk  a  saját  testi  erejéhez  viszonyítva  tud  kiválasztani, hogy az ember és a fegyver tökéletes egységet tudjon alkotni. Az erősebb (nehezebben felhúzható) íjak messzebbre hordanak. A gyorsaság  érték  után  zárójelben  azt  az  időegységet  (szegmens) közöljük, amely a felajzáshoz szükséges. Az íjak felajzása egyszeri művelet (amikor az ideget ráfeszítik az íj szarvára,  ezáltal  lövéskész  állapotba  hozzák  a  fegyvert),  a  zárójeles gyorsaságérték  erre  vonatkozik,  tehát  csak  egyszer  kell  felszámolni, de csakis akkor, ha a felajzás az Összesített Gyorsaság számolásának megkezdése után következik be. A számszeríjak felhúzása lassú folyamat, és minden lövés után újból meg kell tenni. A zárójeles gyorsaságérték erre vonatkozik, míg a zárójel nélküli a célzás-lövés szegmense. Többlövetű számszeríjaknál csak az összes nyílvessző kilövése után kell felhúzni a fegyvert. ",
+        "elemek": {
+            "hosszuij": {
+                "id": "hosszuij",
+                "name": "Hosszú íj ",
+                "info": "  A név nem is annyira az íjszarvak hosszára, mint inkább a formájára utal: hosszú, enyhén ívelt szarvait fából, néhány esetben enyvvel egymáshoz ragasztott falapokból készítik. Olcsó, de igen érzékeny és hamar kifáradó íjtípus – ritkán érik meg az ezredik lövésüket. A rövidebb szarvú íjakat a népnyelv rövid íjnak is nevezi – ha a lőtávot nézzük, ez az elnevezés egészen találó. A hosszabb szarvú íjak hatékony használatához  legalább  50-es  Erő  főérték  szükséges  –  gyengébb  karakterek kezében sem a lőtávra, sem a sebzésszorzóra vonatkozó értékeket nem képesek teljesíteni. ",
+                "cost": {
+                    "min": 250,
+                    "max": 1000
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 4
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 6
+                },
+                "type": "2H"
+            },
+            "visszacspoij": {
+                "id": "visszacsapoij",
+                "name": "Visszacsapó íj ",
+                "info": "  A pusztai nomádok és a jidori harciskolák kedvelt lőfegyvere. Kettős ívű, összetett szarvai egymáshoz ragasztott, réteges falemezekből, kemény  ínból  és  szarulapokból  készülnek,  felajzáskor  teljesen  vissza kell hajlítani az íjtest görbületét, s ez hihetetlen erőt kölcsönöz az ívnek. Tartósabbak, mint a hosszú íjak, ám egy-két ezer lövés után ezek is  kifáradnak,  tönkremennek.  A nomád  íjak  szimmetrikusak,  a  jidori íjak  aszimmetrikusak,  a  felső  szarvuk  hossza  másfélszerese  az  alsó szarvénak, ezért ez utóbbiak lőtávja általában nagyobb, mint a pusztai íjaké. Hatékony használatukhoz legalább 60-az Erő főérték szükséges. ",
+                "cost": {
+                    "min": 350,
+                    "max": 1000
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 4
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 7
+                },
+                "type": "2H"
+            },
+            "kittaranij": {
+                "id": "kittaranij",
+                "name": "Kittarán íj ",
+                "info": "  Igen tartós, strapabíró íjak, melyeket a bütykös antilop szarvából készítenek.  Szinte  állandóan  felajzva  tartható,  tízezernél  több  lövést  is kibír, viszont nagy távolságra nem lehet vele pontosan célozni. Maximális lőtávja a többi íjtól eltérően a célzott lőtáv háromszorosa (300 méter). Hatékony használatához legalább 70-es Erő főérték szükséges. ",
+                "cost": {
+                    "min": 800,
+                    "max": 2000
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 5
+                },
+                "strenght": {
+                    "min": 6,
+                    "max": 8
+                },
+                "type": "2H"
+            }
+        }
+    },
+    "szamszerijakfegyvercsoport": {
+        "id": "szamszerijakfegyvercsoport",
+        "name": "Számszeríjak",
+        "info": "Brutálisan erős, megbízható, ugyanakkor nehézkes fegyverek. Acél íjszarvuk elvileg állandóan felhúzva tartható, ugyanakkor ha már egyszer lőttek vele, igen nehéz újra felajzani. A felajzáshoz különféle segédeszközöket  (tekerő,  karmos  „kecskeláb)  alkalmaznak.  A legegyszerűbb segédeszköz az övre szerelhető húzóhorog és a számszeríj végén  kialakított  kengyel  kombinációja.  Ezt  használva  a  számszeríjász letérdel,  egyik  lábát  beakasztja  a  kengyelbe,  majd  a  húzóhorgot  az idegbe  akasztva  feláll.  Miközben  kiegyenesedik,  az  ideg  beakad  a számszeríj diójába (zárszerkezet), és lövésre kész állapotba kerül. Nehéz, rövid nyílvesszőiken fából készült vezetőszárakat alkalmaznak – ezért, bár nagy erővel röpülnek, hamar lehúzza őket a súly. A gyorsaság után zárójelben a felhúzás ideje szerepel, melyet minden lövés után meg kell tenni. ",
+        "elemek": {
+            "szamszerij": {
+                "id": "szamszerij",
+                "name": "Számszeríj ",
+                "info": "  Különféle méretű és erejű fegyverek. Mindazok vonatkoznak rá, amelyeket a fegyvercsoportnál leírtunk. ",
+                "cost": {
+                    "min": 300,
+                    "max": 1200
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 5,
+                    "max": 8
+                },
+                "type": "2H"
+            },
+            "gnomenyilpuska": {
+                "id": "gnomenyilpuska",
+                "name": "Gnóm nyílpuska ",
+                "info": "  A rövid,  vaskos  tusra  két  acélívet  szerelnek,  melyek  függőlegesen  állnak  a  tus  két  oldalán.  Két  nyílvesszőt  lőhet  ki  egyszerre  vagy  egymás után, felajzását „kecskelábbal” oldják meg. Mivel a gnómok ismerik a vörös és a fekete robbanópor titkát, gyakori, hogy üreges hegyű, robbanóporral töltött nyílvesszőket használnak, melyekből rövid kanóc lóg ki. A meggyújtott kanócú nyílvesszőket azután gyorsan a cél felé röpítik... Néha ezt a típust döfőheggyel is ellátják a kézitusához. ",
+                "cost": {
+                    "min": 600,
+                    "max": 2000
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 4,
+                    "max": 6
+                },
+                "type": "2H"
+            },
+            "pancelzuzo": {
+                "id": "pancelzuzo",
+                "name": "Páncélzúzó ",
+                "info": "  Nagyméretű, igen erős számszeríj. Felajzásához mindenképpen csörlő szükséges. A fegyver neve indokolatlanul szerény, ugyanis a számszeríjak legtöbbje képes átütni a páncélokat, így a páncélzúzó általában hátul még ki is jön, ha egyszer elöl bement... Eltérően a hagyományos  számszeríjlövedékektől,  a  páncélzúzó  nyilait  tompa,  sőt,  lapos heggyel látják el, amely olyan, mint egy pecsétnyomó – az íjszarvak irtózatos ereje még ezt a lehetetlen nyílvesszőt is átlövi egy páncélozott célponton. Használatához és cipeléséhez legalább 60-as Erő főérték szükséges. ",
+                "cost": {
+                    "min": 400,
+                    "max": 1500
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 10,
+                    "max": 10
+                },
+                "type": "2H"
+            },
+            "kathirnyilpuska": {
+                "id": "kathirnyilpuska",
+                "name": "Kathír nyílpuska ",
+                "info": "  Egyívű, ismétlő rendszerű lőfegyver. A rövid acélív felett kicsiny tár lapul, amelybe négy rövid nyílvesszőt helyeznek. Nagyobb tárakkal is készítenek a kathírok nyílpuskákat (5, 6 és 8 nyílvesszővel), ám ezek rendkívül megbízhatatlanok, a vesszők elakadnak a tárban, megsérülnek, és romlik a célzás minősége is. A lövések után gyorsan újra fel lehet  ajzani  a  fegyvert,  sőt,  a  tár  cseréje  sem  tart  sok  ideig  (20  szegmens). A gyorsaság ára a viszonylagos gyengeség és a rövid lőtáv, előnyei, hogy kézitusában is használható, és a nyílhegyek méreggel preparálhatóak. ",
+                "cost": {
+                    "min": 600,
+                    "max": 2000
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 4
+                },
+                "type": "2H"
+            }
+        }
+    },
+    "egyeblofegyverek": {
+        "id": "egyeblofegyverek",
+        "name": "Egyéb lôfegyverek",
+        "info": "Az  itt  szereplő  fegyverek  csak  a  saját  fegyverforgatás  képzettséggel használhatóak. ",
+        "elemek": {
+            "fuvocso": {
+                "id": "fuvocso",
+                "name": "Fúvócső ",
+                "info": "  Hosszabb-rövidebb üreges cső, amelyből könnyű, tűszerű lövedékeket lehet viszonylag hangtalanul kilőni. A lövedékek minden esetben mérgezettek  –  egyébként  semmi  értelme  nem  lenne,  olyan  minimális  a sebzése.  A  fejvadászok  által  használt  rövidebb  fúvócsövekkel  csak kettő-öt méterre lehet pontosan célozni, a hosszabb (kb. 2 m) csövekkel akár húsz méterre is. ",
+                "cost": {
+                    "min": 10,
+                    "max": 20
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 5
+                },
+                "strenght": {
+                    "min": 0,
+                    "max": 0
+                },
+                "type": "1H"
+            },
+            "parittya": {
+                "id": "parittya",
+                "name": "Parittya ",
+                "info": "  Egyszerű, középen kiszélesedő bőrszíj, amelynek egyik végét a csuklóra kötözik, a másik végét marokra fogják. Megpörgetve, majd a szabad  végét  elengedve  röpíti  ki  a  lövedéket,  amely  többnyire  egyszerű kavics  –  ám  a  magukra  valamit  is  adó  parittyások  hegyesre  kalapált ólomlövedékeket használnak, melyekbe belekarcolják szignójukat. A parittya hosszú nyélre szerelt változata pontatlan fegyver, ugyanakkor  nagyobb  a  lőtávja  (120  méter),  és  képes  öklömnyi,  égő  olajos csepüvel töltött cserepeket is kiröpíteni – a nyeles parittya inkább ostromfegyver, csatában kevéssé használható. ",
+                "cost": {
+                    "min": 5,
+                    "max": 30
+                },
+                "speed": {
+                    "min": 4,
+                    "max": 6
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 3
+                },
+                "type": "1H"
+            }
+        }
+    },
+    "kulonlegesfegyverek": {
+        "id": "kulonlegesfegyverek",
+        "name": "Különleges fegyverek",
+        "info": "Az  itt  szereplő  fegyverek  csak  a  saját  fegyverforgatás  képzettséggel használhatóak. ",
+        "elemek": {
+            "okol": {
+                "id": "okol",
+                "name": "Ököl ",
+                "info": "  Az ököl mindig kéznél van , tartja egy ősi jidori mondás. Bár sokan inkább a különféle fegyverekre esküsznek, egy jó kemény ököl már sokakat húzott ki a csávából. Az ökölre húzott boxerek, fémbütykök és pengék  növelik  a  sebzésszorzót  –  ezek  értéke  zárójelben  található  –, ugyanakkor nem szükséges külön jártasság a használatukhoz. A puszta  ököl  sebzésszorzója  a  karakter  erejétől  függ:  69-es  Erő  Főértékig 0,5, 70-től 1, 80-tól 2, 90-től 3. ",
+                "cost": {
+                    "min": 3,
+                    "max": 5
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 1
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 3
+                },
+                "type": "1H"
+            },
+            "lasszo": {
+                "id": "lasszo",
+                "name": "Lasszó ",
+                "info": "  Hosszú kötél, amely az ellenfél elfogására, mozgásának korlátozására használható. ",
+                "cost": {
+                    "min": 3,
+                    "max": 5
+                },
+                "speed": {
+                    "min": 10,
+                    "max": 15
+                },
+                "strenght": {
+                    "min": 0,
+                    "max": 0
+                },
+                "type": "1H"
+            },
+            "dobohalo": {
+                "id": "dobohalo",
+                "name": "Dobóháló ",
+                "info": "  Az  ellenfél  elfogására,  mozgásának  korlátozására  használható,  szegélysúlyokkal ellátott eszköz. ",
+                "cost": {
+                    "min": 10,
+                    "max": 40
+                },
+                "speed": {
+                    "min": 6,
+                    "max": 10
+                },
+                "strenght": {
+                    "min": 0,
+                    "max": 0
+                },
+                "type": "1H"
+            },
+            "shilpenge": {
+                "id": "shilpenge",
+                "name": "Shil-penge ",
+                "info": "  A shil-pengének a tonfa az alapja – a fegyver alapfogása az, amikor a tonfa  hosszú  szára  végigfekszik  az  alkaron.  A két  élre  fent  penge  a kézfejtől előre kb. 40 centire nyúlik előre, de külső vágóéle az alkaron (a  tonfa  szárán)  is  végighúzódik.  A fegyver  így  híven  követi  a  kar mozgását, ideális harceszköznek bizonyulva, hiszen pl. egy hárításnál nem  a  csuklóra  van  terhelve  a  védés,  hanem  az  egész  karra.  Néhány jidori harciskola tradicionális fegyvere. ",
+                "cost": {
+                    "min": 50,
+                    "max": 100
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 5
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 6
+                },
+                "type": "1H"
+            },
+            "fojtohurok": {
+                "id": "fojtohurok",
+                "name": "Fojtóhurok ",
+                "info": "  Vékony  acéldrót,  mindkét  végén  megmarkolható  fa-fogantyúval. Fegyvernek talán nem is nevezhető, mivel csupán rajtaütésszerű, hátulról való támadásokra alkalmas. ",
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "speed": {
+                    "min": 1,
+                    "max": 2
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 3
+                },
+                "type": "1H"
+            },
+            "kriss": {
+                "id": "kriss",
+                "name": "Kriss ",
+                "info": "  Ez valójában egy vékony, kb. 80 centis fémbot, mindkét végén 15 centis,  kétoldalt  is  kiélezett  döfőhegyekkel,  melyek  vágásra  is  alkalmasak.  Kétkezes  technikákra  használható.  Színes  zászlócskákkal  és  selyemdarabokkal díszítik. ",
+                "cost": {
+                    "min": 50,
+                    "max": 120
+                },
+                "speed": {
+                    "min": 3,
+                    "max": 6
+                },
+                "strenght": {
+                    "min": 2,
+                    "max": 5
+                },
+                "type": "1H"
+            },
+            "haritotor": {
+                "id": "haritotor",
+                "name": "Hárítótőr",
+                "info": "  A vívótőrök kiegészítő fegyvere; főként a kardforgató védettségét növeli,  de  alkalomadtán  támadni  is  lehet  vele.  Tompa  élű,  de  hegyes fegyver, pengéje gyakran fogazott. ",
+                "cost": {
+                    "min": 10,
+                    "max": 100
+                },
+                "speed": {
+                    "min": 2,
+                    "max": 3
+                },
+                "strenght": {
+                    "min": 1,
+                    "max": 1
+                },
+                "type": "1H"
+            }
+        }
+    }
+}

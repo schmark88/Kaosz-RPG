@@ -1,0 +1,147 @@
+<hr>
+<div  *ngIf="player.raceId">
+  <div class="rigth-side-panel">
+    <div>
+      {{globals.getMoneyInStringFormat(getBasketPrice())}}
+      <Button (click)='purchaseBasket()'>Megerösít</Button>
+    </div>
+    <div>
+      <ul>
+        <li *ngFor='let item of basket'>
+          {{item.name}}
+          <button (click)='removeFromBasket(item)'>X</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- weapons -->
+  <div class="group-container">
+    <div>
+      <form class="radio-group">
+        <ng-container *ngFor="let group of globals.generateArray(weapons)">
+          <input [id]='group.id' type="radio" [(ngModel)]="weaponTab" [value]="group.id" name="something">
+          <label [for]='group.id'>{{group.name}}</label>
+        </ng-container>
+        <input id="hide" type="radio" [(ngModel)]="weaponTab" [value]="hide" name="something">
+        <label for="hide">Elrejt</label>
+      </form>
+    </div>
+    <div>
+      <div class="float-relative" *ngIf='weaponTab !== hide'>{{weapons[weaponTab].info}}</div>
+      <form class="list-group">
+        <ul class="vertical-list">
+          <ng-container *ngFor="let group of globals.generateArray(weapons)">
+            <ng-container *ngIf='group.id === weaponTab'>
+              <ng-container *ngFor="let item of globals.generateArray(group.elemek)">
+                <li>
+                  <input [id]='item.id' type="radio" [(ngModel)]="weaponItem" [value]="item.id" name="so">
+                  <label [for]='item.id'>{{item.name}}</label>
+                </li>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </ul>
+      </form>
+    </div>
+    <div *ngIf='weaponTab'>
+      <ng-container *ngFor="let item of globals.generateArray(weapons[weaponTab].elemek)">
+        <ng-container *ngIf='item.id === weaponItem'>
+          <div>
+            <div>Erö: {{item.finalStrenght}}</div>
+            <div>Gyorsaság: {{item.finalSpeed}}</div>
+            <div>Ár: {{globals.getMoneyInStringFormat(item.finalCost) }}
+              <Button (click)='addToBasket(item)'>Megvesz</Button>
+            </div>
+            <div>{{item.info}}</div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+  <!-- armors -->
+  <div class="group-container">
+    <div>
+      <form class="radio-group">
+        <ng-container *ngFor="let group of globals.generateArray(armors)">
+          <input [id]='group.id' type="radio" [(ngModel)]="armorTab" [value]="group.id" name="armorTab">
+          <label [for]='group.id'>{{group.name}}</label>
+        </ng-container>
+        <input id="hideA" type="radio" [(ngModel)]="armorTab" [value]="hide" name="armorTab">
+        <label for="hideA">Elrejt</label>
+      </form>
+    </div>
+    <div>
+      <div class="float-relative" *ngIf='armorTab !== hide'>{{armors[armorTab].info}}</div>
+      <form class="list-group">
+        <ul class="vertical-list">
+          <ng-container *ngFor="let group of globals.generateArray(armors)">
+            <ng-container *ngIf='group.id === armorTab'>
+              <ng-container *ngFor="let item of globals.generateArray(group.elemek)">
+                <li>
+                  <input [id]='item.id' type="radio" [(ngModel)]="armorItem" [value]="item.id" name="so">
+                  <label [for]='item.id'>{{item.name}}</label>
+                </li>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </ul>
+      </form>
+    </div>
+    <div *ngIf='armorTab'>
+      <ng-container *ngFor="let item of globals.generateArray(armors[armorTab].elemek)">
+        <ng-container *ngIf='item.id === armorItem'>
+          <div>
+            <div>Védelem: {{item.finalStrenght}}</div>
+            <div>Gyorsaság: {{item.finalSpeed}}</div>
+            <div>Ár: {{globals.getMoneyInStringFormat(item.finalCost) }}
+              <Button (click)='addToBasket(item)'>Megvesz</Button>
+            </div>
+            <div>{{item.info}}</div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+  <!-- mixed good -->
+  <div class="group-container">
+    <div>
+      <form class="radio-group">
+        <ng-container *ngFor="let group of globals.generateArray(mixed_items)">
+          <input [id]='group.id' type="radio" [(ngModel)]="itemsTab" [value]="group.id" name="itemsTab">
+          <label [for]='group.id'>{{group.name}}</label>
+        </ng-container>
+        <input id="hideM" type="radio" [(ngModel)]="itemsTab" [value]="" name="itemsTab">
+        <label for="hideM">Elrejt</label>
+      </form>
+    </div>
+    <div>
+      <!-- <div class="float-relative" *ngIf='itemsTab !== hide'>{{mixed_items[itemsTab].info}}</div> -->
+      <form class="list-group">
+        <ul class="vertical-list-2">
+          <ng-container *ngFor="let group of globals.generateArray(mixed_items)">
+            <ng-container *ngIf='group.id === itemsTab'>
+              <ng-container *ngFor="let item of globals.generateArray(group.elemek)">
+                <li>
+                  <input [id]='item.id' type="radio" [(ngModel)]="itemItem" [value]="item.id" name="so">
+                  <label [for]='item.id'>{{item.name}}</label>
+                </li>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </ul>
+      </form>
+    </div>
+    <div *ngIf='itemItem'>
+      <ng-container *ngFor="let item of globals.generateArray(mixed_items[itemsTab].elemek)">
+        <ng-container *ngIf='item.id === itemItem'>
+          <div>
+            <div>Ár: {{globals.getMoneyInStringFormat(item.finalCost) }}
+              <Button (click)='addToBasket(item)'>Megvesz</Button>
+            </div>
+            <div>{{item.info}}</div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</div>

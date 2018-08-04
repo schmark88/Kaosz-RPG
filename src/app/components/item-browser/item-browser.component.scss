@@ -1,0 +1,42 @@
+@import '../../scss/radio-buttons-as-tabs';
+$container_height : 20em;
+.vertical-list{
+    list-style-type: none;
+    margin: 5;
+    padding: 0;
+    float: left;
+    overflow: auto;
+}
+.vertical-list-2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: auto;
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+    
+}
+.rigth-side-panel {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    float: right;
+    top: 10%;
+    width: 10%;
+    margin-right: 2%;
+    border: 2px solid #dacf40;
+}
+.group-container {
+    position: relative;
+    width: 82%;
+    margin-right: 15%;
+    margin-left: 2.5%;
+    clear: left;
+}
+.float-relative{
+    position: relative;
+    float: left;
+    width: 40%;
+    height: $container_height;
+}

@@ -1,0 +1,124 @@
+{
+    "spell_ingridients": {
+        " viasz": {
+            "id": " viasz",
+            "name": " viasz",
+            "cost": 6
+        },
+        "gyemant": {
+            "id": " gyemant",
+            "name": "gyémánt",
+            "cost": 200
+        },
+        "levelibeka": {
+            "id": "levelibeka",
+            "name": "levelibéka",
+            "cost": 4
+        },
+        "ezusttukor": {
+            "id": "ezusttukor",
+            "name": "ezüsttükör",
+            "cost": 40
+        },
+        "holt szervek": {
+            "id": "holt szervek",
+            "name": "holt szervek",
+            "cost": 130
+        },
+        "ep tetem": {
+            "id": "ep tetem",
+            "name": "ép tetem",
+            "cost": 150
+        },
+        "verrel toltott nadszal": {
+            "id": "verrel toltott nadszal",
+            "name": "vérrel töltött nádszál",
+            "cost": 130
+        },
+        "szurokko": {
+            "id": "szurokko",
+            "name": "szurokkö",
+            "cost": 9
+        },
+        "csontok": {
+            "id": "csontok",
+            "name": "csontok",
+            "cost": 3
+        },
+        "kenko": {
+            "id": "kenko",
+            "name": "kénkö",
+            "cost": 40
+        },
+        "kigyoepe": {
+            "id": "kigyoepe",
+            "name": "kígyóepe",
+            "cost": 35
+        },
+        "kavics": {
+            "id": "kavics",
+            "name": "kavics",
+            "cost": 1
+        },
+        "humusz": {
+            "id": "humusz",
+            "name": "humusz",
+            "cost": 2
+        },
+        "tovis": {
+            "id": "tovis",
+            "name": "tövis",
+            "cost": 1
+        },
+        "smaragd": {
+            "id": "smaragd",
+            "name": "smaragd",
+            "cost": 110
+        },
+        "harkalytoll": {
+            "id": "harkalytoll",
+            "name": "harkálytoll",
+            "cost": 5
+        },
+        "medvekarom": {
+            "id": "medvekarom",
+            "name": "medvekarom",
+            "cost": 7
+        },
+        "hal kopoltyufedoje": {
+            "id": "hal kopoltyufedoje",
+            "name": "hal kopoltyúfedoje",
+            "cost": 2
+        },
+        "mandragoragyoker": {
+            "id": "mandragoragyoker",
+            "name": "mandragóragyökér",
+            "cost": 10
+        },
+        "malachitkavics": {
+            "id": "malachitkavics",
+            "name": "malachitkavics",
+            "cost": 30
+        },
+        "kenpor": {
+            "id": "kenpor",
+            "name": "kénpor",
+            "cost": 50
+        },
+        "bogyos gyumolcs": {
+            "id": "bogyos gyumolcs",
+            "name": "bogyós gyümölcs",
+            "cost": 1
+        },
+        "jadeko": {
+            "id": "jadeko",
+            "name": "jádeko",
+            "cost": 60
+        },
+        "viragszal": {
+            "id": "viragszal",
+            "name": "virágszál",
+            "cost": 1
+        }
+    }
+}
