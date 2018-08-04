@@ -1,0 +1,812 @@
+{
+    "spell_ingridients": {
+        "id": "spell_ingridients",
+        "name": "Varázs komponensek",
+        "elemek": {
+            " viasz": {
+                "id": " viasz",
+                "name": " viasz",
+                "cost": 6
+            },
+            "gyemant": {
+                "id": " gyemant",
+                "name": "gyémánt",
+                "cost": 200
+            },
+            "levelibeka": {
+                "id": "levelibeka",
+                "name": "levelibéka",
+                "cost": 4
+            },
+            "ezusttukor": {
+                "id": "ezusttukor",
+                "name": "ezüsttükör",
+                "cost": 40
+            },
+            "holt szervek": {
+                "id": "holt szervek",
+                "name": "holt szervek",
+                "cost": 130
+            },
+            "ep tetem": {
+                "id": "ep tetem",
+                "name": "ép tetem",
+                "cost": 150
+            },
+            "verrel toltott nadszal": {
+                "id": "verrel toltott nadszal",
+                "name": "vérrel töltött nádszál",
+                "cost": 130
+            },
+            "szurokko": {
+                "id": "szurokko",
+                "name": "szurokkö",
+                "cost": 9
+            },
+            "csontok": {
+                "id": "csontok",
+                "name": "csontok",
+                "cost": 3
+            },
+            "kenko": {
+                "id": "kenko",
+                "name": "kénkö",
+                "cost": 40
+            },
+            "kigyoepe": {
+                "id": "kigyoepe",
+                "name": "kígyóepe",
+                "cost": 35
+            },
+            "kavics": {
+                "id": "kavics",
+                "name": "kavics",
+                "cost": 1
+            },
+            "humusz": {
+                "id": "humusz",
+                "name": "humusz",
+                "cost": 2
+            },
+            "tovis": {
+                "id": "tovis",
+                "name": "tövis",
+                "cost": 1
+            },
+            "smaragd": {
+                "id": "smaragd",
+                "name": "smaragd",
+                "cost": 110
+            },
+            "harkalytoll": {
+                "id": "harkalytoll",
+                "name": "harkálytoll",
+                "cost": 5
+            },
+            "medvekarom": {
+                "id": "medvekarom",
+                "name": "medvekarom",
+                "cost": 7
+            },
+            "hal kopoltyufedoje": {
+                "id": "hal kopoltyufedoje",
+                "name": "hal kopoltyúfedoje",
+                "cost": 2
+            },
+            "mandragoragyoker": {
+                "id": "mandragoragyoker",
+                "name": "mandragóragyökér",
+                "cost": 10
+            },
+            "malachitkavics": {
+                "id": "malachitkavics",
+                "name": "malachitkavics",
+                "cost": 30
+            },
+            "kenpor": {
+                "id": "kenpor",
+                "name": "kénpor",
+                "cost": 50
+            },
+            "bogyos gyumolcs": {
+                "id": "bogyos gyumolcs",
+                "name": "bogyós gyümölcs",
+                "cost": 1
+            },
+            "jadeko": {
+                "id": "jadeko",
+                "name": "jádeko",
+                "cost": 60
+            },
+            "viragszal": {
+                "id": "viragszal",
+                "name": "virágszál",
+                "cost": 1
+            }
+        }
+    },
+    "allatok": {
+        "id": "allatok",
+        "name": "Állatok",
+        "elemek": {
+            "igaslo": {
+                "cost": {
+                    "min": 5,
+                    "max": 20
+                },
+                "csoport": "allatok",
+                "id": "igaslo",
+                "name": "Igásló "
+            },
+            "szamar": {
+                "cost": {
+                    "min": 3,
+                    "max": 10
+                },
+                "csoport": "allatok",
+                "id": "szamar",
+                "name": "Szamár"
+            },
+            "ponilo": {
+                "cost": {
+                    "min": 15,
+                    "max": 30
+                },
+                "csoport": "allatok",
+                "id": "ponilo",
+                "name": "Póniló"
+            },
+            "oszver": {
+                "cost": {
+                    "min": 20,
+                    "max": 40
+                },
+                "csoport": "allatok",
+                "id": "oszver",
+                "name": "Öszvér"
+            },
+            "hataslo": {
+                "cost": {
+                    "min": 50,
+                    "max": 100
+                },
+                "csoport": "allatok",
+                "id": "hataslo",
+                "name": "Hátasló"
+            },
+            "harcilo": {
+                "cost": {
+                    "min": 500,
+                    "max": 20000
+                },
+                "csoport": "allatok",
+                "id": "harcilo",
+                "name": "Harci ló"
+            },
+            "teve": {
+                "cost": {
+                    "min": 10,
+                    "max": 800
+                },
+                "csoport": "allatok",
+                "id": "teve",
+                "name": "Teve"
+            },
+            "postagalamb": {
+                "cost": {
+                    "min": 10,
+                    "max": 200
+                },
+                "csoport": "allatok",
+                "id": "postagalamb",
+                "name": "Postagalamb"
+            },
+            "vadaszsolyom": {
+                "cost": {
+                    "min": 500,
+                    "max": 1000
+                },
+                "csoport": "allatok",
+                "id": "vadaszsolyom",
+                "name": "Vadászsólyom"
+            },
+            "vadaszgoreny": {
+                "cost": {
+                    "min": 5,
+                    "max": 20
+                },
+                "csoport": "allatok",
+                "id": "vadaszgoreny",
+                "name": "Vadászgörény"
+            },
+            "macska": {
+                "cost": {
+                    "min": 5,
+                    "max": 1000
+                },
+                "csoport": "allatok",
+                "id": "macska",
+                "name": "Macska"
+            },
+            "idomitottnagymacska": {
+                "cost": {
+                    "min": 10000,
+                    "max": 20000
+                },
+                "csoport": "allatok",
+                "id": "idomitottnagymacska",
+                "name": "Idomított nagymacska"
+            },
+            "kutyakorcsidomitatlan": {
+                "cost": {
+                    "min": 1,
+                    "max": 5
+                },
+                "csoport": "allatok",
+                "id": "kutyakorcsidomitatlan",
+                "name": "Kutya (korcs, idomítatlan)"
+            },
+            "kutyaorzovedo": {
+                "cost": {
+                    "min": 5,
+                    "max": 100
+                },
+                "csoport": "allatok",
+                "id": "kutyaorzovedo",
+                "name": "Kutya (őrző-védő)"
+            },
+            "vadaszkutya": {
+                "cost": {
+                    "min": 50,
+                    "max": 500
+                },
+                "csoport": "allatok",
+                "id": "vadaszkutya",
+                "name": "Vadászkutya"
+            },
+            "harcikutya": {
+                "cost": {
+                    "min": 100,
+                    "max": 800
+                },
+                "csoport": "allatok",
+                "id": "harcikutya",
+                "name": "Harci kutya "
+            }
+        }
+    },
+    "vegyes felszereles": {
+        "id": "vegyes felszereles",
+        "name": "Vegyes felszerelés",
+        "elemek": {
+            "aso": {
+                "cost": {
+                    "min": 2,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "aso",
+                "name": "Ásó"
+            },
+            "bogracs": {
+                "cost": {
+                    "min": 3,
+                    "max": 10
+                },
+                "csoport": "vegyes felszereles",
+                "id": "bogracs",
+                "name": "Bogrács"
+            },
+            "csaklyakotelnelkul": {
+                "cost": {
+                    "min": 2,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "csaklyakotelnelkul",
+                "name": "Csáklya (kötél nélkül)"
+            },
+            "csengettyu": {
+                "cost": {
+                    "min": 1,
+                    "max": 4
+                },
+                "csoport": "vegyes felszereles",
+                "id": "csengettyu",
+                "name": "Csengettyű"
+            },
+            "emeloescsiga": {
+                "cost": {
+                    "min": 10,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "emeloescsiga",
+                "name": "Emelő és csiga"
+            },
+            "faklya": {
+                "cost": {
+                    "min": 2,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "faklya",
+                "name": "Fáklya"
+            },
+            "gyertya": {
+                "cost": {
+                    "min": 1,
+                    "max": 2
+                },
+                "csoport": "vegyes felszereles",
+                "id": "gyertya",
+                "name": "Gyertya"
+            },
+            "halaszhalo": {
+                "cost": {
+                    "min": 5,
+                    "max": 30
+                },
+                "csoport": "vegyes felszereles",
+                "id": "halaszhalo",
+                "name": "Halászháló"
+            },
+            "halaszhorog": {
+                "cost": {
+                    "min": 1,
+                    "max": 2
+                },
+                "csoport": "vegyes felszereles",
+                "id": "halaszhorog",
+                "name": "Halászhorog"
+            },
+            "hatizsak": {
+                "cost": {
+                    "min": 8,
+                    "max": 30
+                },
+                "csoport": "vegyes felszereles",
+                "id": "hatizsak",
+                "name": "Hátizsák"
+            },
+            "homokora": {
+                "cost": {
+                    "min": 50,
+                    "max": 100
+                },
+                "csoport": "vegyes felszereles",
+                "id": "homokora",
+                "name": "Homokóra"
+            },
+            "hordo5literes": {
+                "cost": {
+                    "min": 10,
+                    "max": 50
+                },
+                "csoport": "vegyes felszereles",
+                "id": "hordo5literes",
+                "name": "Hordó (5 literes)"
+            },
+            "irotollbronzfeju": {
+                "cost": {
+                    "min": 1,
+                    "max": 3
+                },
+                "csoport": "vegyes felszereles",
+                "id": "irotollbronzfeju",
+                "name": "Írótoll (bronzfejű)"
+            },
+            "kezitukor": {
+                "cost": {
+                    "min": 30,
+                    "max": 150
+                },
+                "csoport": "vegyes felszereles",
+                "id": "kezitukor",
+                "name": "Kézitükör"
+            },
+            "kosar": {
+                "cost": {
+                    "min": 5,
+                    "max": 30
+                },
+                "csoport": "vegyes felszereles",
+                "id": "kosar",
+                "name": "Kosár"
+            },
+            "kotel20meter": {
+                "cost": {
+                    "min": 2,
+                    "max": 5
+                },
+                "csoport": "vegyes felszereles",
+                "id": "kotel20meter",
+                "name": "Kötél (20 méter)"
+            },
+            "kreta": {
+                "cost": {
+                    "min": 1,
+                    "max": 2
+                },
+                "csoport": "vegyes felszereles",
+                "id": "kreta",
+                "name": "Kréta"
+            },
+            "kulacs05literes": {
+                "cost": {
+                    "min": 1,
+                    "max": 5
+                },
+                "csoport": "vegyes felszereles",
+                "id": "kulacs05literes",
+                "name": "Kulacs (0,5 literes)"
+            },
+            "labas": {
+                "cost": {
+                    "min": 2,
+                    "max": 6
+                },
+                "csoport": "vegyes felszereles",
+                "id": "labas",
+                "name": "Lábas"
+            },
+            "lada": {
+                "cost": {
+                    "min": 5,
+                    "max": 15
+                },
+                "csoport": "vegyes felszereles",
+                "id": "lada",
+                "name": "Láda"
+            },
+            "lakat": {
+                "cost": {
+                    "min": 50,
+                    "max": 200
+                },
+                "csoport": "vegyes felszereles",
+                "id": "lakat",
+                "name": "Lakat"
+            },
+            "lampas": {
+                "cost": {
+                    "min": 10,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "lampas",
+                "name": "Lámpás"
+            },
+            "lanc5meter": {
+                "cost": {
+                    "min": 10,
+                    "max": 10
+                },
+                "csoport": "vegyes felszereles",
+                "id": "lanc5meter",
+                "name": "Lánc (5 méter)"
+            },
+            "letrakb.3meteres": {
+                "cost": {
+                    "min": 30,
+                    "max": 40
+                },
+                "csoport": "vegyes felszereles",
+                "id": "letrakb.3meteres",
+                "name": "Létra (kb. 3 méteres)"
+            },
+            "maszovas": {
+                "cost": {
+                    "min": 10,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "maszovas",
+                "name": "Mászóvas"
+            },
+            "merleg": {
+                "cost": {
+                    "min": 80,
+                    "max": 100
+                },
+                "csoport": "vegyes felszereles",
+                "id": "merleg",
+                "name": "Mérleg"
+            },
+            "nagyito": {
+                "cost": {
+                    "min": 250,
+                    "max": 400
+                },
+                "csoport": "vegyes felszereles",
+                "id": "nagyito",
+                "name": "Nagyító"
+            },
+            "olaj1dl": {
+                "cost": {
+                    "min": 4,
+                    "max": 5
+                },
+                "csoport": "vegyes felszereles",
+                "id": "olaj1dl",
+                "name": "Olaj (1 dl)"
+            },
+            "papirlap": {
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "csoport": "vegyes felszereles",
+                "id": "papirlap",
+                "name": "Papír (lap)"
+            },
+            "pecsetviasz": {
+                "cost": {
+                    "min": 4,
+                    "max": 5
+                },
+                "csoport": "vegyes felszereles",
+                "id": "pecsetviasz",
+                "name": "Pecsétviasz"
+            },
+            "pergameniv": {
+                "cost": {
+                    "min": 10,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "pergameniv",
+                "name": "Pergamen (ív)"
+            },
+            "sator26szemelyes": {
+                "cost": {
+                    "min": 100,
+                    "max": 300
+                },
+                "csoport": "vegyes felszereles",
+                "id": "sator26szemelyes",
+                "name": "Sátor (2-6 személyes)"
+            },
+            "sator1szemelyes": {
+                "cost": {
+                    "min": 10,
+                    "max": 20
+                },
+                "csoport": "vegyes felszereles",
+                "id": "sator1szemelyes",
+                "name": "Sátor (1 személyes)"
+            },
+            "sip": {
+                "cost": {
+                    "min": 2,
+                    "max": 3
+                },
+                "csoport": "vegyes felszereles",
+                "id": "sip",
+                "name": "Síp"
+            },
+            "szappan": {
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "csoport": "vegyes felszereles",
+                "id": "szappan",
+                "name": "Szappan"
+            },
+            "takaro": {
+                "cost": {
+                    "min": 2,
+                    "max": 3
+                },
+                "csoport": "vegyes felszereles",
+                "id": "takaro",
+                "name": "Takaró"
+            },
+            "tavcso": {
+                "cost": {
+                    "min": 2000,
+                    "max": 4000
+                },
+                "csoport": "vegyes felszereles",
+                "id": "tavcso",
+                "name": "Távcső"
+            },
+            "tegez": {
+                "cost": {
+                    "min": 4,
+                    "max": 10
+                },
+                "csoport": "vegyes felszereles",
+                "id": "tegez",
+                "name": "Tegez"
+            },
+            "tinta1dl": {
+                "cost": {
+                    "min": 40,
+                    "max": 50
+                },
+                "csoport": "vegyes felszereles",
+                "id": "tinta1dl",
+                "name": "Tinta (1 dl)"
+            },
+            "tomlo5literes": {
+                "cost": {
+                    "min": 2,
+                    "max": 8
+                },
+                "csoport": "vegyes felszereles",
+                "id": "tomlo5literes",
+                "name": "Tömlő (5 literes)"
+            },
+            "tuzrevalo1napiadag": {
+                "cost": {
+                    "min": 1,
+                    "max": 5
+                },
+                "csoport": "vegyes felszereles",
+                "id": "tuzrevalo1napiadag",
+                "name": "Tűzrevaló (1 napi adag)"
+            },
+            "tuzszerszam": {
+                "cost": {
+                    "min": 2,
+                    "max": 4
+                },
+                "csoport": "vegyes felszereles",
+                "id": "tuzszerszam",
+                "name": "Tűzszerszám"
+            },
+            "ureskonyv": {
+                "cost": {
+                    "min": 100,
+                    "max": 300
+                },
+                "csoport": "vegyes felszereles",
+                "id": "ureskonyv",
+                "name": "Üres könyv "
+            },
+            "uvegcsevastagfalu": {
+                "cost": {
+                    "min": 20,
+                    "max": 40
+                },
+                "csoport": "vegyes felszereles",
+                "id": "uvegcsevastagfalu",
+                "name": "Üvegcse (vastag falú)"
+            },
+            "varrotu": {
+                "cost": {
+                    "min": 1,
+                    "max": 2
+                },
+                "csoport": "vegyes felszereles",
+                "id": "varrotu",
+                "name": "Varrótű"
+            },
+            "vassulyom": {
+                "cost": {
+                    "min": 2,
+                    "max": 5
+                },
+                "csoport": "vegyes felszereles",
+                "id": "vassulyom",
+                "name": "Vassulyom"
+            },
+            "vitorlavaszonm2": {
+                "cost": {
+                    "min": 1,
+                    "max": 10
+                },
+                "csoport": "vegyes felszereles",
+                "id": "vitorlavaszonm2",
+                "name": "Vitorlavászon (m2)"
+            },
+            "vodor": {
+                "cost": {
+                    "min": 1,
+                    "max": 2
+                },
+                "csoport": "vegyes felszereles",
+                "id": "vodor",
+                "name": "Vödör"
+            }
+        }
+    },
+    "lovas felszereles": {
+        "id": "lovas felszereles",
+        "name": "Lovas felszerelés",
+        "elemek": {
+            "kengyelszijjalpar": {
+                "cost": {
+                    "min": 1,
+                    "max": 20
+                },
+                "csoport": "lovas felszereles",
+                "id": "kengyelszijjalpar",
+                "name": "Kengyel, szíjjal (pár)"
+            },
+            "kotofek": {
+                "cost": {
+                    "min": 3,
+                    "max": 50
+                },
+                "csoport": "lovas felszereles",
+                "id": "kotofek",
+                "name": "Kötõfék"
+            },
+            "lemezvertlorafejszugy": {
+                "cost": {
+                    "min": 4000,
+                    "max": 5000
+                },
+                "csoport": "lovas felszereles",
+                "id": "lemezvertlorafejszugy",
+                "name": "Lemezvért lóra (fej, szügy)"
+            },
+            "lemezvertlorateljes": {
+                "cost": {
+                    "min": 8000,
+                    "max": 10000
+                },
+                "csoport": "lovas felszereles",
+                "id": "lemezvertlorateljes",
+                "name": "Lemezvért lóra (teljes)"
+            },
+            "utazonyereg": {
+                "cost": {
+                    "min": 20,
+                    "max": 100
+                },
+                "csoport": "lovas felszereles",
+                "id": "utazonyereg",
+                "name": "Utazó nyereg"
+            },
+            "lovaginyereg": {
+                "cost": {
+                    "min": 100,
+                    "max": 500
+                },
+                "csoport": "lovas felszereles",
+                "id": "lovaginyereg",
+                "name": "Lovagi nyereg"
+            },
+            "nyeregzsak": {
+                "cost": {
+                    "min": 1,
+                    "max": 20
+                },
+                "csoport": "lovas felszereles",
+                "id": "nyeregzsak",
+                "name": "Nyeregzsák"
+            },
+            "lotakaro": {
+                "cost": {
+                    "min": 5,
+                    "max": 20
+                },
+                "csoport": "lovas felszereles",
+                "id": "lotakaro",
+                "name": "Lótakaró"
+            },
+            "diszeslepellora": {
+                "cost": {
+                    "min": 10,
+                    "max": 50
+                },
+                "csoport": "lovas felszereles",
+                "id": "diszeslepellora",
+                "name": "Díszes lepel lóra"
+            },
+            "vontatohammalhaslora": {
+                "cost": {
+                    "min": 5,
+                    "max": 10
+                },
+                "csoport": "lovas felszereles",
+                "id": "vontatohammalhaslora",
+                "name": "Vontatóhám málhás lóra"
+            }
+        }
+    }
+}
